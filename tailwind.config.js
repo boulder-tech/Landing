@@ -20,7 +20,10 @@ module.exports = {
         background: {
           DEFAULT: "var(--color-background)",
         },
-        grey:{
+        accent: {
+          DEFAULT: "var(--color-accent)",
+        },
+        gray:{
           "100": "var(--color-grey-100)",
           "200": "var(--color-grey-200)",
           "300": "var(--color-grey-300)",

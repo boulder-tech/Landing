@@ -42,7 +42,9 @@ export default function RootLayout({
         className={clsx(
           atypDisplay.variable,
           atypText.variable,
-          "font-atyp-text"
+          "font-atyp-text",
+          'bg-background',
+          'text-foreground-heading'
         )}
       >
         <Header />
