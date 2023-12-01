@@ -1,4 +1,4 @@
 const HeroSection = () => {
-  return <div>Hero-Section</div>;
+  return <section className="w-full h-screen flex items-center justify-center">Hero-Section</section>
 };
 export default HeroSection;

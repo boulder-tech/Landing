@@ -20,3 +20,7 @@
   --color-grey-200: rgba(250, 251, 255, 0.08);
   --color-grey-300: rgba(250, 251, 255, 0.12);
 }
+
+html {
+  color-scheme: dark;
+}

@@ -48,7 +48,7 @@ export default function RootLayout({
         )}
       >
         <Header />
-        <main className="flex flex-col gap-8 bg-background">
+        <main className="flex flex-col bg-background">
           {children}
           <Footer />
         </main>
