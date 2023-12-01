@@ -4,6 +4,7 @@ import BenefitsSection from "@/components/sections/benefits-section";
 import FinalCtaSection from "@/components/sections/final-cta-section";
 import PartnersSection from "@/components/sections/partners-section";
 import Separator from "@/components/separator";
+import "./globals.css";
 
 export default function Home() {
   return (
