@@ -31,7 +31,7 @@ const Header = () => {
             </Link>
           </div>
         </div>
-        <Link href={"#waitlist"}>
+        <Link href={"/#waitlist"}>
           <GhostButton>Join waitlist →</GhostButton>
         </Link>
       </div>
