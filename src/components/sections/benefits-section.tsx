@@ -31,7 +31,7 @@ const BenefitsSection = () => {
           />
         ))}
       </div>
-      <div className="p-0 w-full flex sm:flex-row flex-col justify-center items-center mt-4 py-8 gap-8 border border-gray-100 bg-gradient-to-r from-[#fafbff00] via-[#fafbff0a] to-[#fafbff00]">
+      <div className="p-0 w-full flex sm:flex-row flex-col justify-center items-center mt-4 py-8 gap-8 border border-gray-100 bg-gradient-to-r from-transparent via-gray-100 to-transparent">
         <h3 className="text-[#485069] text-base font-medium font-atyp-text">
           Powered by
         </h3>
