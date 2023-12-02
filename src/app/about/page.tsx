@@ -1,5 +1,12 @@
-import Image from "next/image";
+import MeetTheTeam from "@/components/sections/meetTheTeam-section";
 
 export default function About() {
-  return <main></main>;
+  return (
+    <>
+      <div className="mt-[25vh]">
+        <MeetTheTeam />
+      </div>
+    </>
+  )
+
 }
