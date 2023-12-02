@@ -7,12 +7,12 @@ import Irsa from "../../../public/icons/irsa-logo.svg";
 
 const BenefitsSection = () => {
   return (
-    <section className="w-full flex items-center justify-center relative px-8 py-16 text-center flex-col gap-16">
+    <section className="w-full flex items-center justify-center relative py-16 text-center flex-col gap-16">
       <span
-        className="absolute z-10 top-1/4 w-full h-full blur-[120px] bg-gradient-to-b from-[#a5f5ff14] to-[#245bff14]"
+        className="absolute pointer-events-none z-10 top-1/4 w-full h-full blur-[120px] bg-gradient-to-b from-[#a5f5ff14] to-[#245bff14]"
         aria-hidden="true"
       />
-      <div className="grid gap-4">
+      <div className="px-8 grid gap-4">
         <h2 className="font-atyp-display text-[32px] -tracking-[0.72px] text-transparent bg-clip-text bg-gradient-to-t from-[#FAFBFF] to-[#B3B9CB]">
           Boulder Tokens
         </h2>
@@ -21,7 +21,7 @@ const BenefitsSection = () => {
           generation of financial assets.
         </p>
       </div>
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 w-fit items-center place-items-center justify-center justify-items-center">
+      <div className="px-8 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 w-fit items-center place-items-center justify-center justify-items-center">
         {benefitData.map((object, index) => (
           <BenefitCard
             key={index}
@@ -35,7 +35,7 @@ const BenefitsSection = () => {
         <h3 className="text-[#485069] text-base font-medium font-atyp-text">
           Powered by
         </h3>
-        <Separator orientation="vertical" />
+        <span className="w-px h-8 bg-gray-100 hidden sm:block" />
         <Image src={Shefa} alt="Shefa logo" />
         <Image src={Irsa} alt="Irsa logo" />
       </div>
