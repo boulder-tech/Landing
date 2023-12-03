@@ -26,6 +26,7 @@ const Header = () => {
             <Link
               className="cursor-pointer font-medium hover:opacity-50 transition-all duration-200"
               href={"https://docs.bouldertech.fi"}
+              target="_blank"
             >
               Documentation ↗
             </Link>

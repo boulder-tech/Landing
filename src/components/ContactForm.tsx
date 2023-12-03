@@ -1,4 +1,5 @@
 'use client';
+import { sendEmail } from '@/app/_actions';
 import React from 'react';
 
 import { toast } from 'react-toastify';
@@ -18,7 +19,7 @@ const ContactForm = () => {
 
         if(data.email && data.name && data.message) {
             if(ValidateEmail(String(data.email))){
-                sendEmail({ email: String(data.email), name: String(data.name), org: String(data.org) || '-', message: String(data.message) });
+                submitEmail({ email: String(data.email), name: String(data.name), org: String(data.org) || '-', message: String(data.message) });
                 e.currentTarget.reset();
                 void toastSuccess();
                 return;
@@ -30,24 +31,15 @@ const ContactForm = () => {
     }
 
     //Function for calling email api
-    const sendEmail = async ({email, name, org, message}: {email: string, name: string, org: string, message: string}) => {
-        await fetch('/api/sendmail', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ email, name, org, message }),
-            })
-            .then((res) => {
-                if (!res.ok) {
-                throw new Error()
-                }
-                return res.json()
-            })
-            .catch((err) => {
-                console.log('Error', err)
-                throw new Error('Network error.')
-            })
+    const submitEmail = async ({email, name, org, message}: {email: string, name: string, org: string, message: string}) => {
+        await sendEmail({email, name, org, message})
+        .then((res) => {
+            console.log(res);
+        })
+        .catch((err) => {
+            console.log('Error', err)
+            throw new Error('Network error.')
+        })
     }
 
     //Function for validating email adress

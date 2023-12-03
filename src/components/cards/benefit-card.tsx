@@ -39,7 +39,7 @@ export default function BenefitCard({ icon, title, description }: benefitCardPro
       />
       <div className="w-80 h-full p-8 rounded-[inherit] flex flex-col gap-2 font-atypText font-normal text-left cursor-default relative z-20 overflow-hidden">
         <div className="flex gap-2">
-          <Image src={icon} alt="Icon" width={16} height={16}/>
+          <Image src={icon} alt="Icon" width={16} height={16} className="w-auto"/>
           <h3 className="text-foreground-heading text-base">{title}</h3>
         </div>
         <h4 className="text-sm text-foreground-dark">{description}</h4>
