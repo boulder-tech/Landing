@@ -1,3 +1,5 @@
+import Separator from "../separator";
+
 const PartnersSection = () => {
   return (
     <section className="w-full flex items-center justify-center relative py-16 text-center flex-col gap-16">
@@ -11,6 +13,7 @@ const PartnersSection = () => {
           dedicated to safeguarding your investments.
         </p>
       </div>
+      <Separator orientation="horizontal"/>
     </section>
   );
 };
