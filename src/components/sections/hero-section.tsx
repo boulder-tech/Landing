@@ -21,7 +21,7 @@ const HeroSection = () => {
         <EarthModel />
       </div>
       <div className="max-w-[52rem] flex flex-col items-center gap-10 text-center relative pt-16">
-        <h1 className="text-foreground-heading sm:text-[60px] text-[37px] font-atyp-display font-medium leading-[120%] z-10">
+        <h1 className="text-foreground-heading sm:text-[60px] text-[34px] font-atyp-display font-medium leading-[120%] z-10">
           Tokenize, manage and invest in{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00B2FF] to-[#245BFF] whitespace-nowrap">
             real-world
