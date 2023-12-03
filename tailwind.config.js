@@ -29,6 +29,22 @@ module.exports = {
           "300": "var(--color-grey-300)",
         }
       },
+      animation: {
+        tilt: "tilt 10s infinite linear",
+      },
+      keyframes: {
+        tilt: {
+          "0%, 50%, 100%": {
+            transform: "rotate(0deg)",
+          },
+          "25%": {
+            transform: "rotate(10deg)",
+          },
+          "75%": {
+            transform: "rotate(-10deg)",
+          }
+        },
+      }
     },
   },
   plugins: [],
