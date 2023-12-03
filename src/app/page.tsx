@@ -13,7 +13,6 @@ export default function Home() {
       <HeroSection />
       <Separator orientation="horizontal"/>
       <BenefitsSection/>
-      <GlowPaths/>
       <PartnersSection/>
       <FinalCtaSection/>
     </>
