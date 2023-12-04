@@ -5,8 +5,15 @@ import GhostButton from "./buttons/ghost-button";
 import Image from "next/image";
 import clsx from "clsx";
 import Hamburger from "../../public/icons/hamburger.svg";
+import { useState } from "react";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
       <header className="w-full fixed h-[65px] top-0 z-50 py-3 bg-[rgba(1, 3, 18, 0.01)] border-b border-grey-200 backdrop-blur-lg">
@@ -37,13 +44,56 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          <GhostButton iconBtn onClick={()=>console.log("ja")} classes="sm:hidden"><Image src={Hamburger} alt="Hamburger menu" width={14} height={14} className="w-4 h-4 absolute"/></GhostButton>
+          <GhostButton iconBtn onClick={toggleMenu} classes="sm:hidden">
+            <Image
+              src={Hamburger}
+              alt="Hamburger menu"
+              width={14}
+              height={14}
+              className="w-4 h-4 absolute"
+            />
+          </GhostButton>
           <Link href={"/#waitlist"} className="hidden sm:block">
             <GhostButton>Join waitlist →</GhostButton>
           </Link>
         </div>
       </header>
-      <div className="fixed top-[65px] w-full h-[calc(100vh-65px)] bg-[rgba(1, 3, 18, 0.01)] backdrop-blur-lg z-50 flex items-center justify-center"></div>
+      <div
+        className={clsx(
+          "transition-all px-5 flex-col gap-10 duration-500 fixed top-[65px] w-full h-[calc(100vh-65px)] bg-[rgba(1, 3, 18, 0.5)] backdrop-blur-xl z-50 flex items-center justify-center",
+          menuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        )}
+      >
+        <Link
+          className="cursor-pointer text-3xl font-medium hover:opacity-50 transition-all duration-200"
+          href={"/about"}
+          onClick={toggleMenu}
+        >
+          About us
+        </Link>
+        <Link
+          className="cursor-pointer text-3xl font-medium hover:opacity-50 transition-all duration-200"
+          href={"/contact"}
+          onClick={toggleMenu}
+        >
+          Contact
+        </Link>
+        <Link
+          className="cursor-pointer text-3xl font-medium hover:opacity-50 transition-all duration-200"
+          href={"https://docs.bouldertech.fi"}
+          target="_blank"
+          onClick={toggleMenu}
+        >
+          Documentation ↗
+        </Link>
+        <Link
+          className="cursor-pointer text-3xl font-medium hover:opacity-50 transition-all duration-200"
+          href={"/#waitlist"}
+          onClick={toggleMenu}
+        >
+          Join waitlist
+        </Link>
+      </div>
     </>
   );
 };
