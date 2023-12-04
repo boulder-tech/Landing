@@ -4,7 +4,7 @@ import MountainVector from "../../../public/assets/mountain-vector.svg";
 
 const FinalCtaSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center relative px-8 sm:mt-80 mt-64 mb-44 w-full gap-10">
+    <section className="flex flex-col items-center justify-center relative px-8 sm:mt-56 mt-28 mb-44 w-full gap-10">
       <Image
         src={MountainVector}
         alt="Background asset"
