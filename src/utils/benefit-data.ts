@@ -18,12 +18,12 @@ const benefitData = [
     },
     {
         title: 'Low entry barrier',
-        description: 'Accessible and simples, lowering the entry barrier and creating more liquidity',
+        description: 'Accessible and simple, lowering the entry barrier and creating more liquidity',
         icon: LowEntryIcon,
     },
     {
         title: 'Professional',
-        description: 'Token issuer sregulated by the British Virgin Islands Financial Services Commission.',
+        description: 'Token issuer regulated by the Bermuda Monetary Authority.',
         icon: ProfessionalIcon,
     },
     {

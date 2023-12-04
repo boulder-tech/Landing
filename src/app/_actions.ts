@@ -2,7 +2,7 @@
 import { Resend } from "resend";
 import nodemailer from 'nodemailer';
 
-export async function sendEmail({email, name, org, message}: {email: string, name: string, org?: string, message?: string}){
+export async function sendEmail({email, name, org, message}: {email: string, name?: string, org?: string, message?: string}){
     // Conection with nodemailer
     const mailTransporter = nodemailer.createTransport({
         host: process.env.NEXT_PUBLIC_HOST,
@@ -17,13 +17,13 @@ export async function sendEmail({email, name, org, message}: {email: string, nam
     
     //Prepare the message
     let mailDetails = message ? {
-        from: email,
-        to: process.env.NEXT_PUBLIC_EMAIL,
-        subject: `${name}, from ${org}`,
+        from: process.env.NEXT_PUBLIC_EMAIL,
+        to: process.env.NEXT_PUBLIC_TOEMAIL,
+        subject: org ? `Contact request by ${name}, from ${org}` : `Contact request by ${name}`,
         text: `${email}: ${message}`,
         } : {
-        from: email,
-        to: process.env.NEXT_PUBLIC_EMAIL,
+        from: process.env.NEXT_PUBLIC_EMAIL,
+        to: process.env.NEXT_PUBLIC_TOEMAIL,
         subject: `${email} has joined the waitlist!`,
     }
     

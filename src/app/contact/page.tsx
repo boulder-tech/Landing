@@ -9,7 +9,7 @@ export default function Contact() {
     </div>
     <ToastContainer 
       position="bottom-right" 
-      toastStyle={{ backgroundColor: "#245BFF0a", color: 'white' }}
+      toastStyle={{ backgroundColor: "#010312", color: 'white' }}
     />
   </main>;
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import EarthModel from "../earth";
 import BrandButton from "../buttons/brand-button";
+import Waitlist from "../buttons/waitlist-input";
 
 const HeroSection = () => {
   return (
@@ -31,14 +32,7 @@ const HeroSection = () => {
         <h3 className="text-foreground-leading text-xl font-medium z-10">
           Mint and redeem tokens on-chain, instantly
         </h3>
-        <div className="p-1 pl-4 bg-gray-100 border border-gray-100 max-w-sm w-full rounded-full flex gap-1 z-10">
-          <input
-            type="text"
-            className="px-2 w-full font-medium outline-none border-none bg-transparent text-foreground-heading text-sm placeholder:text-foreground-dark"
-            placeholder="Email address..."
-          />
-          <BrandButton>Join waitlist →</BrandButton>
-        </div>
+        <Waitlist />
       </div>
     </section>
   );

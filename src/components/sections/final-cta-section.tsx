@@ -1,6 +1,7 @@
 import BrandButton from "../buttons/brand-button";
 import Image from "next/image";
 import MountainVector from "../../../public/assets/mountain-vector.svg";
+import Waitlist from "../buttons/waitlist-input";
 
 const FinalCtaSection = () => {
   return (
@@ -18,14 +19,7 @@ const FinalCtaSection = () => {
           Boulder Tech
         </span>
       </h1>
-      <div className="p-1 pl-4 bg-gray-100 border border-gray-100 max-w-sm w-full rounded-full flex gap-1 z-10 backdrop-blur-sm">
-        <input
-          type="text"
-          className="px-2 w-full font-medium outline-none border-none bg-transparent text-foreground-heading text-sm placeholder:text-foreground-dark"
-          placeholder="Email address..."
-        />
-        <BrandButton>Join waitlist →</BrandButton>
-      </div>
+      <Waitlist />
     </section>
   );
 };
