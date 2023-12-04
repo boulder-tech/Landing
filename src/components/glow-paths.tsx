@@ -70,7 +70,7 @@ const SVGLineGlowAnimate: React.FC<SVGLineGlowAnimateProps> = ({
       clearTimeout(startTimeout);
       setOpacity(0);
     };
-  }, [movementDelay]);
+  }, [movementDelay, svgHeight]);
 
   return (
     <svg

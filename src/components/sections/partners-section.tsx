@@ -63,12 +63,10 @@ const PartnersSection = () => {
         {" "}
         <section className="flex flex-col gap-4 text-center">
           <h3 className="font-atyp-display text-[24px] -tracking-[0.72px] text-transparent bg-clip-text bg-gradient-to-t from-[#FAFBFF] to-[#B3B9CB]">
-            Top-Tier Resources and Managers{" "}
+            Regulated Providers{" "}
           </h3>
           <p className="text-foreground-leading text-base w-full max-w-3xl">
-            Our investments are focused solely on multi-billion dollar,
-            extremely liquid exchange-traded funds, overseen by the leading bond
-            managers globally.
+            Our funds entrust all assets to third-party accredited custodians and will undergo annual audits.
           </p>
         </section>
         <section className="flex gap-4 w-full sm:flex-row flex-col items-center relative">

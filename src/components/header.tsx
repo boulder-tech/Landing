@@ -15,7 +15,7 @@ const Header = () => {
               className="cursor-pointer font-medium hover:opacity-50 transition-all duration-200"
               href={"/about"}
             >
-              About
+              About us
             </Link>
             <Link
               className="cursor-pointer font-medium hover:opacity-50 transition-all duration-200"

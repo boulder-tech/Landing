@@ -1,6 +1,7 @@
 "use client";
-import { Canvas, useLoader, useFrame } from "@react-three/fiber";
+// @ts-ignore 
 import { TextureLoader } from "three/src/loaders/TextureLoader";
+import { Canvas, useLoader, useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 
 function EarthMesh() {
