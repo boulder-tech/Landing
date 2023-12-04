@@ -23,7 +23,7 @@ const PartnersSection = () => {
         </p>
       </div>
       <Separator orientation="horizontal" />
-      <div className="max-w-3xl flex items-center justify-between gap-16 w-full">
+      <div className="max-w-3xl flex flex-col md:flex-row items-center justify-between gap-16 w-full mx-8">
         <section className="flex flex-col gap-4 text-left">
           <h3 className="font-atyp-display text-[24px] -tracking-[0.72px] text-transparent bg-clip-text bg-gradient-to-t from-[#FAFBFF] to-[#B3B9CB]">
             Top-Tier Resources and Managers{" "}
@@ -34,13 +34,14 @@ const PartnersSection = () => {
             managers globally.
           </p>
         </section>
-        <section className="flex gap-4 w-full">
+        <section className="flex gap-4 w-full relative">
+          <span className="absolute opacity-25 blur-[100px] z-10 pointer-events-none bg-gradient-to-b rounded-full h-full w-full rotate-45 from-emerald-400 to-accent" />
           <PartnerCard icon={BlackRock} />
           <PartnerCard icon={Pimco} />
         </section>
       </div>
       <Separator orientation="horizontal" />
-      <div className="max-w-3xl flex items-center justify-between gap-16 w-full flex-col">
+      <div className="max-w-3xl relative flex items-center justify-between gap-16 w-full flex-col mx-8">
         <section className="flex flex-col gap-4 text-center">
           <h3 className="font-atyp-display text-[24px] -tracking-[0.72px] text-transparent bg-clip-text bg-gradient-to-t from-[#FAFBFF] to-[#B3B9CB]">
             Established Leadership
@@ -50,14 +51,16 @@ const PartnersSection = () => {
             prominent organizations.
           </p>
         </section>
-        <section className="flex gap-4 w-full">
-          <PartnerCard icon={MercadoLibre}/>
+        <section className="flex gap-4 w-full relative">
+          <span className="absolute opacity-25 blur-[100px] z-10 pointer-events-none bg-gradient-to-b rounded-full h-full w-full rotate-12 from-accent to-fuchsia-500" />
+          <PartnerCard icon={MercadoLibre} />
           <PartnerCard icon={CreditAgricole} />
           <PartnerCard icon={BBVA} />
         </section>
       </div>
       <Separator orientation="horizontal" />
-      <div className="max-w-3xl flex items-center justify-between gap-16 w-full flex-col">
+      <div className="max-w-3xl relative flex items-center justify-between gap-16 w-full flex-col mx-8">
+        {" "}
         <section className="flex flex-col gap-4 text-center">
           <h3 className="font-atyp-display text-[24px] -tracking-[0.72px] text-transparent bg-clip-text bg-gradient-to-t from-[#FAFBFF] to-[#B3B9CB]">
             Top-Tier Resources and Managers{" "}
@@ -68,7 +71,9 @@ const PartnersSection = () => {
             managers globally.
           </p>
         </section>
-        <section className="flex gap-4 w-full">
+        <section className="flex gap-4 w-full relative">
+          <span className="absolute opacity-20 blur-[100px] z-10 pointer-events-none bg-gradient-to-b rounded-full h-full w-full -rotate-12 from-fuchsia-500 to-rose-500" />
+
           <PartnerCard icon={ClearStreet} />
           <PartnerCard icon={Ankura} />
           <PartnerCard icon={StoneX} />
