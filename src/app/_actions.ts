@@ -1,29 +1,33 @@
 "use server";
-import { Resend } from "resend";
 import nodemailer from 'nodemailer';
 
 export async function sendEmail({email, name, org, message}: {email: string, name?: string, org?: string, message?: string}){
+    const HOST = process.env.NEXT_PUBLIC_HOST;
+    const EMAIL = process.env.NEXT_PUBLIC_EMAIL;
+    const PASS = process.env.NEXT_PUBLIC_PASS;
+    const EMAILTO = process.env.NEXT_PUBLIC_TOEMAIL;
+    
     // Conection with nodemailer
     const mailTransporter = nodemailer.createTransport({
-        host: process.env.NEXT_PUBLIC_HOST,
+        host: HOST,
         port: 587,
         secure: false,
         service: "Gmail",
         auth: {
-            user: process.env.NEXT_PUBLIC_EMAIL,
-            pass: process.env.NEXT_PUBLIC_PASS,
+            user: EMAIL,
+            pass: PASS,
         },
     });
     
     //Prepare the message
     let mailDetails = message ? {
-        from: process.env.NEXT_PUBLIC_EMAIL,
-        to: process.env.NEXT_PUBLIC_TOEMAIL,
+        from: EMAIL,
+        to: EMAILTO,
         subject: org ? `Contact request by ${name}, from ${org}` : `Contact request by ${name}`,
         text: `${email}: ${message}`,
         } : {
-        from: process.env.NEXT_PUBLIC_EMAIL,
-        to: process.env.NEXT_PUBLIC_TOEMAIL,
+        from: EMAIL,
+        to: EMAILTO,
         subject: `${email} has joined the waitlist!`,
     }
     
