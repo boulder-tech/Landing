@@ -1,4 +1,4 @@
-import PersonCard from "../cards/person-card";
+import PersonCard from '../cards/person-card';
 
 const MeetTheTeam = () => {
     return (
@@ -8,15 +8,47 @@ const MeetTheTeam = () => {
                     Meet the team
                 </h1>
                 <h3 className="text-foreground-leading text-xl font-medium z-10">
-                    Expert technical background both in broader crypto and finance
+                    Expert technical background both in broader crypto and
+                    finance
                 </h3>
             </div>
             <div className="flex sm:flex-row flex-col gap-11">
-                <PersonCard name="Rodrigo Benzaquen" role="CEO" imageRoute="/assets/team/rodri.png" fact1="Co-founder & CTO" fact1col="@SenseiNode" fact2='Co-founder & CEO' fact2col="@Nubeliu" fact3="Early tech employee" fact3col="@MercadoLibre"/>
-                <PersonCard name="Guillermo Delmonte" role="COO" imageRoute="/assets/team/guille.png" fact1="Certified" fact1col="Public Accountant & Financial Advisor" fact2="Held roles in" fact2col="Private Banking, Trading Desk & Business Development" fact3="Led two initial" fact3col="public offerings"/>
+                <PersonCard
+                    name="Rodrigo Benzaquen"
+                    role="CEO"
+                    imageRoute="/assets/team/rodri.png"
+                    fact1="Co-founder & CTO"
+                    fact1col="@SenseiNode"
+                    fact2="Co-founder & CEO"
+                    fact2col="@Nubeliu"
+                    fact3="Early tech employee"
+                    fact3col="@MercadoLibre"
+                />
+                <PersonCard
+                    name="Guillermo Delmonte"
+                    role="COO"
+                    imageRoute="/assets/team/guille.png"
+                    fact1="Certified"
+                    fact1col="Public Accountant & Financial Advisor"
+                    fact2="Held roles in"
+                    fact2col="Private Banking, Trading Desk & Business Development"
+                    fact3="Led two initial"
+                    fact3col="public offerings"
+                />
+                <PersonCard
+                    name="Alberto Guerrero Montilla"
+                    role="CMO"
+                    imageRoute="/assets/team/albert.png"
+                    fact1="Co-Founder"
+                    fact1col="Criptotendencias"
+                    fact2="Co-Founder"
+                    fact2col="EOSVenezuela Block Producer"
+                    fact3="Head of Growth"
+                    fact3col="SenseiNode"
+                />
             </div>
         </div>
     );
-}
+};
 
 export default MeetTheTeam;
