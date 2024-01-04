@@ -2,6 +2,10 @@ import Image from 'next/image';
 import ImagetypeClaim from '../../../public/assets/imagotype-claim.svg';
 import Link from 'next/link';
 import X from '../../../public/icons/x-social-media-round-icon.svg';
+import Medium from '../../../public/icons/medium-round-icon.svg';
+import Linkedin from '../../../public/icons/linkedin-round-icon.svg';
+
+import './styles/footer.css';
 
 const Footer = () => {
     return (
@@ -26,8 +30,36 @@ const Footer = () => {
                         >
                             <Image
                                 src={X}
-                                width={42}
-                                height={42}
+                                width={52}
+                                height={52}
+                                className="Icons__TwitterIcon-sc-dy67gv-2 ipWMgx"
+                                alt="icon"
+                            />
+                        </a>
+                        <a
+                            href="https://medium.com/@BoulderTech"
+                            rel="noreferrer noopenner"
+                            target="_blank"
+                            className="pages__OutboundLink-sc-1hmqm-24 irHuFq"
+                        >
+                            <Image
+                                src={Medium}
+                                width={52}
+                                height={52}
+                                className="Icons__TwitterIcon-sc-dy67gv-2 ipWMgx"
+                                alt="icon"
+                            />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/company/bouldertechtoken "
+                            rel="noreferrer noopenner"
+                            target="_blank"
+                            className="pages__OutboundLink-sc-1hmqm-24 irHuFq"
+                        >
+                            <Image
+                                src={Linkedin}
+                                width={60}
+                                height={60}
                                 className="Icons__TwitterIcon-sc-dy67gv-2 ipWMgx"
                                 alt="icon"
                             />
