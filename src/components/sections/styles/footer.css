@@ -1,0 +1,18 @@
+.kTUbOm {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.kTUbOm > :not(:first-of-type) {
+    margin-top: 0px;
+    margin-left: 16px;
+}
+
+.dglOxj {
+    height: 24px;
+    width: 24px;
+    fill: white;
+    opacity: 1;
+}
