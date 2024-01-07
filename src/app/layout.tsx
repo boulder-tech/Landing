@@ -29,6 +29,20 @@ const atypText = localFont({
 export const metadata: Metadata = {
   title: "Boulder Tech",
   description: "The gateway token",
+  icons: {
+    icon: [
+      {
+        media: '(prefers-color-scheme: light)',
+        url: '/images/icon-light.png',
+        href: '/images/icon-light.png',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/images/icon-dark.png',
+        href: '/images/icon-dark.png',
+      },
+    ],
+  }
 };
 
 export default function RootLayout({
