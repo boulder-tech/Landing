@@ -11,12 +11,13 @@ const Footer = () => {
     return (
         <footer className="w-full flex flex-col border-t border-gray-200 bg-background 2xl:px-[300px] lg:px-[150px] md:px-[75px] px-[20px] py-16 pb-0 items-center justify-center">
             <div className="w-full">
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-6">
                     <Image
                         src={ImagetypeClaim}
                         alt="Boulder Tech, the gateway token"
                         width={312}
                         height={312}
+                        className='sm:w-80 w-64'
                     />
                     <p className="text-foreground-dark font-medium">
                         Social networks
@@ -30,8 +31,8 @@ const Footer = () => {
                         >
                             <Image
                                 src={X}
-                                width={52}
-                                height={52}
+                                width={30}
+                                height={30}
                                 className="Icons__TwitterIcon-sc-dy67gv-2 ipWMgx"
                                 alt="icon"
                             />
@@ -44,8 +45,8 @@ const Footer = () => {
                         >
                             <Image
                                 src={Medium}
-                                width={52}
-                                height={52}
+                                width={30}
+                                height={30}
                                 className="Icons__TwitterIcon-sc-dy67gv-2 ipWMgx"
                                 alt="icon"
                             />
@@ -58,8 +59,8 @@ const Footer = () => {
                         >
                             <Image
                                 src={Linkedin}
-                                width={60}
-                                height={60}
+                                width={30}
+                                height={30}
                                 className="Icons__TwitterIcon-sc-dy67gv-2 ipWMgx"
                                 alt="icon"
                             />
