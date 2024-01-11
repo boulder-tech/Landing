@@ -71,16 +71,11 @@ const Footer = () => {
             </div>
             <div className="w-full border-t flex items-center justify-center p-4 mt-16 font-medium gap-8 border-gray-200">
                 <Link
-                    href="/terms"
+                    href="https://docs.bouldertech.fi/boulder-tech-docs/terms-and-conditions"
+                    target='_blank'
                     className="text-foreground-dark hover:text-foreground-leading transition-all duration-200"
                 >
                     Terms & Conditions
-                </Link>
-                <Link
-                    href="/privacy"
-                    className="text-foreground-dark hover:text-foreground-leading transition-all duration-200"
-                >
-                    Privacy policy
                 </Link>
             </div>
         </footer>
