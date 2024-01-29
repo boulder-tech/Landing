@@ -31,6 +31,12 @@ const Header = () => {
               </Link>
               <Link
                 className="cursor-pointer font-medium hover:opacity-50 transition-all duration-200"
+                href={"/blog"}
+              >
+                Blog
+              </Link>
+              <Link
+                className="cursor-pointer font-medium hover:opacity-50 transition-all duration-200"
                 href={"/contact"}
               >
                 Contact
