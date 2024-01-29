@@ -1,17 +1,17 @@
 import PartnerCard from "../partner-card";
 import Separator from "../separator";
-import BlackRock from "../../../public/icons/black-rock.svg";
-import Pimco from "../../../public/icons/pimco.svg";
-import MercadoLibre from "../../../public/icons/mercado-libre.svg";
-import CreditAgricole from "../../../public/icons/credit-agricole.svg";
-import BBVA from "../../../public/icons/bbva.svg";
-import StoneX from "../../../public/icons/stone-x.svg";
-import ClearStreet from "../../../public/icons/clear-street.svg";
-import Ankura from "../../../public/icons/ankura.svg";
+import BlackRock from "../../../public/icons/black-rock.png";
+import Pimco from "../../../public/icons/pimco.png";
+import MercadoLibre from "../../../public/icons/mercado-libre.png";
+import CreditAgricole from "../../../public/icons/credit-agricole.png";
+import BBVA from "../../../public/icons/bbva.png";
+import StoneX from "../../../public/icons/stone-x.png";
+import ClearStreet from "../../../public/icons/clear-street.png";
+import Ankura from "../../../public/icons/ankura.png";
 
 const PartnersSection = () => {
   return (
-    <section className="w-full flex items-center justify-center relative py-16 text-center px-5 flex-col gap-16">
+    <section className="w-full flex items-center justify-center relative pt-16 pb-4 text-center px-5 flex-col gap-16">
       <div className="px-8 flex flex-col gap-4 items-center justify-center">
         <h2 className="font-atyp-display text-[32px] -tracking-[0.72px] text-transparent bg-clip-text bg-gradient-to-t from-[#FAFBFF] to-[#B3B9CB]">
           Elevate your Investments with Custodial Brilliance
