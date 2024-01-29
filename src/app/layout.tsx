@@ -48,7 +48,7 @@ export default function RootLayout({
         )}
       >
         <Header />
-        <main className="flex flex-col bg-background">
+        <main className="flex flex-col bg-background overflow-x-hidden">
           {children}
           <Footer />
         </main>
