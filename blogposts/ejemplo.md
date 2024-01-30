@@ -2,6 +2,7 @@
 title: 'Greetings to the Global Blockchain Community'
 date: '2023-12-23'
 readTime: 3
+image: 'ejemplo.png'
 ---
 
 ## Greetings to the Global Blockchain Community
