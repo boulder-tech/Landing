@@ -36,7 +36,7 @@ const Post = async ({ params }: { params: { postId: string } }) => {
         return notFound();
     }
 
-    const { title, date, contentHtml } = await getPostData(postId);
+    const { title, date, readTime, contentHtml } = await getPostData(postId);
 
     const pubDate = getFormattedDate(date);
 
@@ -45,7 +45,7 @@ const Post = async ({ params }: { params: { postId: string } }) => {
             <div className="w-full md:px-0 px-6 prose prose-invert mt-40">
                 <h1 className="text-4xl mb-2">{title}</h1>
                 <p className="mt-0">
-                    {pubDate}
+                    {readTime + ' min read · ' + pubDate}
                 </p>
                 <article className="mt-8">
                     <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
