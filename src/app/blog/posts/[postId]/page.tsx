@@ -44,18 +44,18 @@ const Post = async ({ params }: { params: { postId: string } }) => {
     return (
         <div className="w-screen flex items-center justify-center relative">
             <span className='w-full h-full bg-gradient-to-b from-[#245BFF] to-transparent opacity-20 blur-[400px] absolute left-0 top-0' aria-hidden={true}></span>
-            <div className="w-full md:px-0 px-6 prose prose-invert mt-40 z-10">
-                <h1 className="text-4xl mb-2">{title}</h1>
+            <div className="w-full md:px-0 px-6 prose prose-headings:font-medium prose-invert mt-40 z-10">
+                <h1 className="text-4xl mb-2 font-medium">{title}</h1>
                 <p className="mt-0 mb-0">
                     {readTime + ' min read · ' + pubDate}
                 </p>
                 <div className='overflow-hidden rounded-md w-full h-80 mb-4 relative'>
-                    <Image src={'/blogImages/' + image} alt="" layout='fill' objectFit='cover'></Image>
+                    <Image src={'/blogImages/' + image} alt="" fill objectFit='cover' priority></Image>
                 </div>
                 <article className="mt-8">
                     <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
-                    <p className="mt-8 mb-28">
-                        <Link className="hover:underline no-underline" href="/blog">← Back to home</Link>
+                    <p className="mt-10 mb-28">
+                        <Link className="no-underline hover:pl-1 transition-all" href="/blog">← Back to home</Link>
                     </p>
                 </article>
             </div>

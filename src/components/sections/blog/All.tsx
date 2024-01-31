@@ -1,12 +1,14 @@
 import React from 'react'
 import Heading from './Components/Heading'
 import AllPosts from './Components/AllPosts'
+import { getSortedPostsData } from '../../../../lib/posts';
 
 const All = () => {
+  const posts = getSortedPostsData();
   return (
-    <div className='pt-64 pb-64'>
+    <div className='pb-64 z-10'>
         <Heading title='Browse all' subtitle='Pioneering the Path for the financial revolution'></Heading>
-        <AllPosts></AllPosts>
+        <AllPosts posts={posts.slice(3)}></AllPosts>
     </div>
   )
 }

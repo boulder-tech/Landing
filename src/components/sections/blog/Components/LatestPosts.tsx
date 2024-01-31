@@ -6,7 +6,7 @@ const LatestPosts = () => {
     const posts = getSortedPostsData();
 
     return (
-        <div className="w-full flex gap-[30px] mt-16">
+        <div className="w-full flex flex-wrap gap-[20px] mt-16 justify-center">
             <MainPost post={posts[0]}></MainPost>
             <div className="flex flex-col gap-[20px]">
                 <SmallPost post={posts[1]}></SmallPost>
