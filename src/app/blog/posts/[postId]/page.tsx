@@ -42,13 +42,16 @@ const Post = async ({ params }: { params: { postId: string } }) => {
     const pubDate = getFormattedDate(date);
 
     return (
-        <div className="w-screen flex items-center justify-center">
-            <div className="w-full md:px-0 px-6 prose prose-invert mt-40">
-                <Image src={'/blogImages/' + image} alt="" width={400} height={300}></Image>
+        <div className="w-screen flex items-center justify-center relative">
+            <span className='w-full h-full bg-gradient-to-b from-[#245BFF] to-transparent opacity-20 blur-[400px] absolute left-0 top-0' aria-hidden={true}></span>
+            <div className="w-full md:px-0 px-6 prose prose-invert mt-40 z-10">
                 <h1 className="text-4xl mb-2">{title}</h1>
-                <p className="mt-0">
+                <p className="mt-0 mb-0">
                     {readTime + ' min read · ' + pubDate}
                 </p>
+                <div className='overflow-hidden rounded-md w-full h-80 mb-4 relative'>
+                    <Image src={'/blogImages/' + image} alt="" layout='fill' objectFit='cover'></Image>
+                </div>
                 <article className="mt-8">
                     <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
                     <p className="mt-8 mb-28">
