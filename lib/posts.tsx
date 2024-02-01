@@ -60,3 +60,14 @@ export async function getPostData(id: string) {
     // Combine the data with the id
     return blogPostWithHTML
 }
+
+export function htmlToString(html: string) {
+    html = html.replace(/<br>/gi, "\n");
+    html = html.replace(/<h2.*>/gi, "\n");
+    html = html.replace(/<h1.*>/gi, "\n");
+    html = html.replace(/<h3.*>/gi, "\n");
+    html = html.replace(/<p. *>/gi, "\n");
+    html = html.replace(/<a. *href="(.*?)".*>(.*?)<\/a>/gi, " $2 (Link->$1) ");
+    html = html.replace(/<(?:.|\s)*?>/g, "");
+    return html;
+}

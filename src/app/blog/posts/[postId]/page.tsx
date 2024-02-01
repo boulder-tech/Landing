@@ -50,7 +50,7 @@ const Post = async ({ params }: { params: { postId: string } }) => {
                     {readTime + ' min read · ' + pubDate}
                 </p>
                 <div className='overflow-hidden rounded-md w-full h-80 mb-4 relative'>
-                    <Image src={'/blogImages/' + image} alt="" fill objectFit='cover' priority></Image>
+                    <Image src={'/blogImages/' + image} alt="" fill className='object-cover' priority></Image>
                 </div>
                 <article className="mt-8">
                     <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
