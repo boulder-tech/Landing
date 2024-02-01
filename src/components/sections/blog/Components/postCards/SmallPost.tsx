@@ -12,7 +12,7 @@ const SmallPost = async ({post}: Props) => {
 
     const formattedDate = getFormattedDate(date);
     return (
-        <Link href={`/blog/posts/${id}`} className='bg-gray-100 p-[0.9rem] flex gap-4 w-[30rem] h-[16.375rem] rounded-xl text-foreground-leading text-base group'>
+        <Link href={`/blog/posts/${id}`} className='bg-gray-100 p-[0.9rem] flex gap-4 sm:w-[30rem] w-[21rem] sm:h-[16.375rem] h-[18rem] rounded-xl text-foreground-leading text-base group'>
             <div className='overflow-hidden rounded-md w-[16rem] h-full relative'>
                 <Image src={'/blogImages/' + image} alt="" fill className='object-cover'></Image>
             </div>
@@ -20,7 +20,7 @@ const SmallPost = async ({post}: Props) => {
                 <div className='flex flex-col gap-2'>
                     <div className='flex flex-col gap-0'>
                         <p className=''>{readTime + ' min read · ' + formattedDate}</p>
-                        <h2 className='line-clamp-3 text-foreground-heading min-h-[5rem] text-[1.625rem] font-atyp-display font-medium leading-[120%] group-hover:underline'>{title}</h2>
+                        <h2 className='line-clamp-3 text-foreground-heading min-h-[5rem] sm:text-[1.625rem] text-[1.4rem] font-atyp-display font-medium leading-[120%] group-hover:underline'>{title}</h2>
                     </div>
                     <p className='line-clamp-3'>{preview}</p>
                 </div>
