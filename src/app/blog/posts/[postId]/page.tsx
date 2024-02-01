@@ -26,6 +26,8 @@ export const generateMetadata = ({ params }: { params: { postId: string } }) => 
 
     return {
         title: post.title,
+        description: post.preview,
+        datePublished: post.date
     }
 }
 
