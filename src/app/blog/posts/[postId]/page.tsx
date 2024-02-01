@@ -25,7 +25,7 @@ export const generateMetadata = ({ params }: { params: { postId: string } }) => 
     }
 
     return {
-        title: post.title,
+        title: post.title + ' | ' + 'By Boulder Tech' + ' | ' + post.date,
         description: post.preview,
         datePublished: post.date
     }
