@@ -11,7 +11,7 @@ const AllPosts = ({posts}: {posts: BlogPost[]}) => {
     }
 
     return (
-        <section className='mt-16 relative flex items-end justify-center'>
+        <section className={`mt-16 relative flex items-end justify-center ${(postsToShow < posts.length && postsToShow > 3) ? 'flex-col items-center justify-center gap-8' : 'flex-row'}`}>
             <div className='w-full grid grid-cols-3 justify-center gap-6'>
                 {posts.slice(0, postsToShow).map((post) => (
                     <MidPost key={post.id} post={post} />
@@ -26,6 +26,11 @@ const AllPosts = ({posts}: {posts: BlogPost[]}) => {
                 </>
                 )
             }
+            {(postsToShow < posts.length && postsToShow > 3) && (
+                <button onClick={addPosts} className="mb-16 transition-all duration-500 whitespace-nowrap bg-accent hover:shadow-lg hover:shadow-blue-500/20 rounded-full px-6 text-sm h-[3.1rem] font-medium text-foreground-heading flex items-center justify-center">
+                    Load more
+                </button>
+            )}
         </section>
     )
 }
