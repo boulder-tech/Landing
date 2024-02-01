@@ -23,6 +23,11 @@ const atypText = localFont({
       weight: "500",
       style: "normal",
     },
+    {
+      path: "./fonts/AtypText-Semibold.woff",
+      weight: "600",
+      style: "normal",
+    },
   ],
 });
 
