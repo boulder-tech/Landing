@@ -1,7 +1,7 @@
 type BlogPost = {
     id: string,
     title: string,
-    date: string,
+    date: Date,
     readTime: number,
     image: string,
     preview: string,

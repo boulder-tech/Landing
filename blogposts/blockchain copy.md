@@ -1,7 +1,5 @@
 ---
 title: 'Blockchain es lo mejor del mundo, descubrelo aqui y aqui y aqui'
-date: '2020-12-31'
-readTime: 2
 image: 'blockchain.png'
 ---
 

@@ -18,6 +18,9 @@ export function getSortedPostsData() {
         const fullPath = path.join(postsDirectory, fileName);
         const fileContents = fs.readFileSync(fullPath, 'utf8');
 
+        //Get file creation date
+        const dateCreated = fs.statSync(fullPath).birthtime;
+
         // Use gray-matter to parse the post metadata section
         const matterResult = matter(fileContents);
 
@@ -26,11 +29,14 @@ export function getSortedPostsData() {
         const plainTextPreview = markdownToPlainText(content);
         const preview = plainTextPreview.slice(0, 260) + (plainTextPreview.length > 260 ? '...' : '');
 
+        //Calculate post readtime
+        const readTime = calculateReadTime(plainTextPreview);
+
         const blogPost: BlogPost = {
             id,
             title: matterResult.data.title,
-            date: matterResult.data.date,
-            readTime: matterResult.data.readTime,
+            date: dateCreated,
+            readTime: readTime,
             image: matterResult.data.image,
             preview: preview,
         }
@@ -46,13 +52,18 @@ export async function getPostData(id: string) {
     const fullPath = path.join(postsDirectory, `${id}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
+    const dateCreated = fs.statSync(fullPath).birthtime;
+
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
 
     // Extract a preview from the content (adjust as needed)
     const content = matterResult.content;
-    const previewLength = 150; // Set the desired length for the preview
-    const preview = content.slice(0, previewLength) + (content.length > previewLength ? '...' : '');
+    const plainTextPreview = markdownToPlainText(content);
+    const preview = plainTextPreview.slice(0, 260) + (plainTextPreview.length > 260 ? '...' : '');
+
+    //Calculate post readtime
+    const readTime = calculateReadTime(plainTextPreview);
 
     const processedContent = await remark()
         .use(html)
@@ -63,15 +74,15 @@ export async function getPostData(id: string) {
     const blogPostWithHTML: BlogPost & { contentHtml: string } = {
         id,
         title: matterResult.data.title,
-        date: matterResult.data.date,
-        readTime: matterResult.data.readTime,
+        date: dateCreated,
+        readTime: readTime,
         image: matterResult.data.image,
         preview: preview,
         contentHtml,
     }
 
     // Combine the data with the id
-    return blogPostWithHTML
+    return blogPostWithHTML;
 }
 
 // Function to convert Markdown to plain text
@@ -80,14 +91,7 @@ const markdownToPlainText = (markdownString: string) => {
     return plainText;
 };
 
-
-export function htmlToString(html: string) {
-    html = html.replace(/<br>/gi, "\n");
-    html = html.replace(/<h2.*>/gi, "\n");
-    html = html.replace(/<h1.*>/gi, "\n");
-    html = html.replace(/<h3.*>/gi, "\n");
-    html = html.replace(/<p. *>/gi, "\n");
-    html = html.replace(/<a. *href="(.*?)".*>(.*?)<\/a>/gi, " $2 (Link->$1) ");
-    html = html.replace(/<(?:.|\s)*?>/g, "");
-    return html;
+const calculateReadTime = (markdownString: string) => {
+    const readTime = Math.round(markdownString.length / 900);
+    return readTime;
 }

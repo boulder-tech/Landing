@@ -1,7 +1,5 @@
 ---
 title: 'Leading the Charge in Real World Assets Tokenization'
-date: '2023-12-24'
-readTime: 3
 image: 'ejemplo.png'
 ---
 
