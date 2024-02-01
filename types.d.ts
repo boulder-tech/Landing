@@ -4,4 +4,5 @@ type BlogPost = {
     date: string,
     readTime: number,
     image: string,
+    preview: string,
 };

@@ -2,18 +2,13 @@ import React from 'react'
 import getFormattedDate from '../../../../../../lib/getFormattedDate';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getPostData, htmlToString } from '../../../../../../lib/posts';
 
 type Props = {
     post: BlogPost,
 }
 
 const MainPost = async ({post}: Props) => {
-    const {id, title, date, readTime, image} = post;
-
-    //Format html for card preview
-    const {contentHtml} = await getPostData(id);
-    const postIntro = htmlToString(contentHtml);
+    const {id, title, date, readTime, image, preview} = post;
 
     const formattedDate = getFormattedDate(date);
     return (
@@ -27,7 +22,7 @@ const MainPost = async ({post}: Props) => {
                         <p className='text-foreground-leading text-base'>{readTime + ' min read · ' + formattedDate}</p>
                         <h2 className='line-clamp-2 text-foreground-heading min-h-12 text-[1.75rem] font-atyp-display font-medium leading-[120%] group-hover:underline'>{title}</h2>
                     </div>
-                    <p className='line-clamp-4 text-foreground-leading text-base'>{postIntro}</p>
+                    <p className='line-clamp-4 text-foreground-leading text-base'>{preview}</p>
                 </div>
             </div>
             <p className='text-base text-accent'>Read the article <span className='pl-0 group-hover:pl-1 transition-all'>→</span></p>

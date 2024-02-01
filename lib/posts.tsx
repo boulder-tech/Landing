@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import stripMarkdown from 'strip-markdown';
 
 const postsDirectory = path.join(process.cwd(), 'blogposts');
 
@@ -20,12 +21,18 @@ export function getSortedPostsData() {
         // Use gray-matter to parse the post metadata section
         const matterResult = matter(fileContents);
 
+        // Extract a preview from the content (adjust as needed)
+        const content = matterResult.content;
+        const plainTextPreview = markdownToPlainText(content);
+        const preview = plainTextPreview.slice(0, 260) + (plainTextPreview.length > 260 ? '...' : '');
+
         const blogPost: BlogPost = {
             id,
             title: matterResult.data.title,
             date: matterResult.data.date,
             readTime: matterResult.data.readTime,
             image: matterResult.data.image,
+            preview: preview,
         }
 
         // Combine the data with the id
@@ -42,6 +49,11 @@ export async function getPostData(id: string) {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
 
+    // Extract a preview from the content (adjust as needed)
+    const content = matterResult.content;
+    const previewLength = 150; // Set the desired length for the preview
+    const preview = content.slice(0, previewLength) + (content.length > previewLength ? '...' : '');
+
     const processedContent = await remark()
         .use(html)
         .process(matterResult.content);
@@ -54,12 +66,20 @@ export async function getPostData(id: string) {
         date: matterResult.data.date,
         readTime: matterResult.data.readTime,
         image: matterResult.data.image,
+        preview: preview,
         contentHtml,
     }
 
     // Combine the data with the id
     return blogPostWithHTML
 }
+
+// Function to convert Markdown to plain text
+const markdownToPlainText = (markdownString: string) => {
+    const plainText = remark().use(stripMarkdown).processSync(markdownString).toString();
+    return plainText;
+};
+
 
 export function htmlToString(html: string) {
     html = html.replace(/<br>/gi, "\n");

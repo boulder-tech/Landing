@@ -8,7 +8,7 @@ type Props = {
 }
 
 const MidPost = ({post}: Props) => {
-    const {id, title, date, readTime, image} = post;
+    const {id, title, date, readTime, image, preview} = post;
 
     //Format html for card preview
     // const {contentHtml} = await getPostData(id);
@@ -26,7 +26,7 @@ const MidPost = ({post}: Props) => {
                         <p className=''>{readTime + ' min read · ' + formattedDate}</p>
                         <h2 className='line-clamp-2 text-foreground-heading h-[3rem] text-[1.25rem] font-atyp-display font-medium leading-[120%] text-ellipsis group-hover:underline'>{title}</h2>
                     </div>
-                    <p className='line-clamp-3'></p>
+                    <p className='line-clamp-3'>{preview}</p>
                 </div>
             </div>
             <p className='text-accent'>Read the article <span className='pl-0 group-hover:pl-1 transition-all'>→</span></p>

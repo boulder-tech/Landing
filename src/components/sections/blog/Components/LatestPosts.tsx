@@ -2,8 +2,8 @@ import { getSortedPostsData } from "../../../../../lib/posts"
 import MainPost from "./postCards/MainPost";
 import SmallPost from "./postCards/SmallPost";
 
-const LatestPosts = () => {
-    const posts = getSortedPostsData();
+const LatestPosts = async () => {
+    const posts = await getSortedPostsData();
 
     return (
         <div className="w-full flex flex-wrap gap-[20px] mt-16 justify-center">
