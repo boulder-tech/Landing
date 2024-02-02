@@ -1,7 +1,7 @@
 import Link from "next/link"
 import getFormattedDate from "../../../../../../lib/getFormattedDate";
 import Image from "next/image";
-import { getPostData, htmlToString } from "../../../../../../lib/posts";
+import { getPostData } from "../../../../../../lib/posts";
 
 type Props = {
     post: BlogPost,
@@ -9,10 +9,6 @@ type Props = {
 
 const MidPost = ({post}: Props) => {
     const {id, title, date, readTime, image, preview} = post;
-
-    //Format html for card preview
-    // const {contentHtml} = await getPostData(id);
-    // const postIntro = htmlToString(contentHtml);
 
     const formattedDate = getFormattedDate(date);
     return (
