@@ -1,9 +1,7 @@
 ---
-title: 'Blockchain es lo mejor del mundo, descubrelo aqui y aqui y aqui'
-image: 'blockchain.png'
+title: 'Leading the Charge in Real World Assets Tokenization — The Next Frontier in Digital Finance'
+image: 'leadingTheCharge.png'
 ---
-
-## Esto es blockchain
 
 In the ever-evolving domain of digital finance, 2024 marks a pivotal year with BoulderTech at the forefront, pioneering an innovative niche — the tokenization of Real World Assets (RWA). This groundbreaking process, transforming tangible assets into digital tokens via blockchain, represents more than a mere technological advancement. It’s a portal to democratizing investment opportunities, historically inaccessible to many, thereby leveling the playing field in global finance.
 
