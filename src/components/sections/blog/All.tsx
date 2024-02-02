@@ -8,7 +8,8 @@ const All = () => {
   return (
     <div className='pb-32 z-10'>
         <Heading title='Browse all' subtitle='Pioneering the Path for the financial revolution'></Heading>
-        <AllPosts posts={posts.slice(3)}></AllPosts>
+        {/* When another post is added, change slice value to 3 */}
+        <AllPosts posts={posts.slice(0)}></AllPosts>
     </div>
   )
 }
