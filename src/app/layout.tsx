@@ -23,6 +23,11 @@ const atypText = localFont({
       weight: "500",
       style: "normal",
     },
+    {
+      path: "./fonts/AtypText-Semibold.woff",
+      weight: "600",
+      style: "normal",
+    },
   ],
 });
 
@@ -48,7 +53,7 @@ export default function RootLayout({
         )}
       >
         <Header />
-        <main className="flex flex-col bg-background">
+        <main className="flex flex-col bg-background overflow-x-hidden">
           {children}
           <Footer />
         </main>

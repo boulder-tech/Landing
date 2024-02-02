@@ -7,7 +7,7 @@ export default function Contact() {
     <div className="md:mt-[35vh] mt-[25vh]">
       <ContactSection />
     </div>
-    <ToastContainer 
+    <ToastContainer  
       position="bottom-right" 
       toastStyle={{ backgroundColor: "#010312", color: 'white' }}
     />
