@@ -26,7 +26,8 @@
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
     "resend": "^2.0.0",
-    "strip-markdown": "^6.0.0"
+    "strip-markdown": "^6.0.0",
+    "yarn": "^1.22.21"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
