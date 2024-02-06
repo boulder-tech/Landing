@@ -12,7 +12,7 @@ const MainPost = async ({post}: Props) => {
 
     const formattedDate = getFormattedDate(date);
     return (
-        <Link href={`/blog/posts/${id}`} className='bg-gray-100 p-4 flex flex-col justify-between sm:w-[30rem] w-[21rem] h-[34rem] rounded-xl group'>
+        <Link href={`/blog/${id}`} className='bg-gray-100 p-4 flex flex-col justify-between sm:w-[30rem] w-[21rem] h-[34rem] rounded-xl group'>
             <div className='flex flex-col gap-4'>
                 <div className='overflow-hidden rounded-md w-full h-64 relative'>
                     <Image src={'/blogImages/' + image} alt="" fill className='object-cover'></Image>

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import getFormattedDate from "../../../../../lib/getFormattedDate";
-import { getPostData, getSortedPostsData } from "../../../../../lib/posts";
+import getFormattedDate from "../../../../lib/getFormattedDate";
+import { getPostData, getSortedPostsData } from "../../../../lib/posts";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 

@@ -12,7 +12,7 @@ const SmallPost = async ({post}: Props) => {
 
     const formattedDate = getFormattedDate(date);
     return (
-        <Link href={`/blog/posts/${id}`} className='bg-gray-100 p-[0.9rem] flex gap-4 sm:w-[30rem] w-[21rem] sm:h-[16.375rem] h-[18rem] rounded-xl text-foreground-leading text-base group'>
+        <Link href={`/blog/${id}`} className='bg-gray-100 p-[0.9rem] flex gap-4 sm:w-[30rem] w-[21rem] sm:h-[16.375rem] h-[18rem] rounded-xl text-foreground-leading text-base group'>
             <div className='overflow-hidden rounded-md w-[16rem] h-full relative'>
                 <Image src={'/blogImages/' + image} alt="" fill className='object-cover'></Image>
             </div>
