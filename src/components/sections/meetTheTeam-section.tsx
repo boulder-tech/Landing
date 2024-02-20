@@ -30,7 +30,7 @@ const MeetTheTeam = () => {
           fact1="Co-Founder"
           fact1col="Criptotendencias"
           fact2="Co-Founder"
-          fact2col="EOSVenezuela Block Producer"
+          fact2col="EOS Venezuela Block Producer"
           fact3="Head of Growth"
           fact3col="SenseiNode"
         />
