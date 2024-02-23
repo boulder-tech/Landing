@@ -86,7 +86,7 @@ const PartnersSection = () => {
             Grant Support{" "}
           </h3>
           <p className="text-foreground-leading text-base w-full max-w-3xl">
-            We are proud recipients of the Arbitrum Foundation's Grants program.
+            We are proud recipients of the Arbitrum Foundation&apos;s Grants program.
           </p>
         </section>
         <PartnerCard icon={ArbitrumFoundation} iconWidth={240} iconHeight={240} />
