@@ -83,7 +83,7 @@ const PartnersSection = () => {
         {" "}
         <section className="flex flex-col gap-4 text-center">
           <h3 className="font-atyp-display text-[24px] -tracking-[0.72px] text-transparent bg-clip-text bg-gradient-to-t from-[#FAFBFF] to-[#B3B9CB]">
-            Grant Support{' '}
+            Grant Support{" "}
           </h3>
           <p className="text-foreground-leading text-base w-full max-w-3xl">
             We are proud recipients of the Arbitrum Foundation's Grants program.
