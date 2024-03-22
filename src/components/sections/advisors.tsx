@@ -11,7 +11,6 @@ const Advisors = () => {
             <div className="flex flex-wrap justify-center gap-8">
                 <PersonCard name="Sebastián López Sansón" imageRoute="/assets/team/sebastian.png" fact1="Co-founder" fact1col="@SyLS" fact2="Leading tech business" fact2col="lawyer & advisor"/>
                 <PersonCard name="Ariel Schapira" imageRoute="/assets/team/ariel.png" fact1="Industrial Engineer & businessman with a" fact1col="long professional career" fact2="Key Executive leading" fact2col="Telecommunications, Energy & Insurance companies"/>
-                <PersonCard name="Pedro Cavanna" imageRoute="/assets/team/pedro.png" fact1="Investor/Developer in" fact1col="Real Estate, Finance & Software Companies" fact2="Key Executive" fact2col="Pharmaceutical Industry"/>
             </div>
         </div>
     );

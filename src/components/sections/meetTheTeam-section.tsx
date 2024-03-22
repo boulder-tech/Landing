@@ -34,6 +34,15 @@ const MeetTheTeam = () => {
           fact3="Head of Growth"
           fact3col="SenseiNode"
         />
+        <PersonCard
+          name="Pedro Cavanna"
+          role="COO"
+          imageRoute="/assets/team/pedro.png"
+          fact1="Investor/Developer in"
+          fact1col="Real Estate, Finance & Software Companies"
+          fact2="Key Executive"
+          fact2col="Pharmaceutical Industry"
+        />
       </div>
     </div>
   );
