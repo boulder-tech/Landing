@@ -43,6 +43,15 @@ const MeetTheTeam = () => {
           fact2="Key Executive"
           fact2col="Pharmaceutical Industry"
         />
+        <PersonCard
+          name="Pablo Hegoburu"
+          role="CTO"
+          imageRoute="/assets/team/pablo_1.jpg"
+          fact1="MSc in"
+          fact1col="Nuclear Engineering"
+          fact2="R&D"
+          fact2col={`Smart Contracts, Blockchain, Automated Crypto Trading`}
+        />
       </div>
     </div>
   );
