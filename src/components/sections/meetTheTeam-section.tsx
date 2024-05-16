@@ -52,6 +52,15 @@ const MeetTheTeam = () => {
           fact2="R&D"
           fact2col={`Smart Contracts, Blockchain, Automated Crypto Trading`}
         />
+        <PersonCard
+          name="Gabriel Cohen"
+          role="CFO"
+          imageRoute="/assets/team/gabi.png"
+          fact1="Chief Financial Officer and Director at"
+          fact1col="Pampa Energía"
+          fact2="Financial Control Manager"
+          fact2col={`Treasury and Corporate & Investment Banker at CitiBank`}
+        />
       </div>
     </div>
   );
