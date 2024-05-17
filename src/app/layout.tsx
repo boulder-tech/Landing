@@ -32,8 +32,19 @@ const atypText = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Boulder Tech",
-  description: "The gateway token",
+  openGraph: {
+    title: "Boulder Tech",
+    description: "The gateway to the world of RWA's.",
+    url: "https://bouldertech.fi",
+    siteName: "Boulder Tech",
+    images: [
+      {
+        url: 'https://bouldertech.fi/assets/preview.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+    ],
+  }
 };
 
 export default function RootLayout({
