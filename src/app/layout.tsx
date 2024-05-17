@@ -34,7 +34,7 @@ const atypText = localFont({
 export const metadata: Metadata = {
   openGraph: {
     title: "Boulder Tech",
-    description: "The gateway to the world of RWA's.",
+    description: "Tokenized Real-World assets, at the tip of your fingers.",
     url: "https://bouldertech.fi",
     siteName: "Boulder Tech",
     images: [
