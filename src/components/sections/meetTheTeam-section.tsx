@@ -35,15 +35,6 @@ const MeetTheTeam = () => {
           fact3col="SenseiNode"
         />
         <PersonCard
-          name="Pedro Cavanna"
-          role="COO"
-          imageRoute="/assets/team/pedro.png"
-          fact1="Investor/Developer in"
-          fact1col="Real Estate, Finance & Software Companies"
-          fact2="Key Executive"
-          fact2col="Pharmaceutical Industry"
-        />
-        <PersonCard
           name="Pablo Hegoburu"
           role="CTO"
           imageRoute="/assets/team/pablo_1.jpg"
@@ -60,6 +51,26 @@ const MeetTheTeam = () => {
           fact1col="Pampa Energía"
           fact2="Financial Control Manager"
           fact2col={`Treasury and Corporate & Investment Banker at CitiBank`}
+        />
+        <PersonCard
+          name="Pedro Cavanna"
+          role="COO"
+          imageRoute="/assets/team/pedro.png"
+          fact1="Investor/Developer in"
+          fact1col="Real Estate, Finance & Software Companies"
+          fact2="Key Executive"
+          fact2col="Pharmaceutical Industry"
+        />
+        <PersonCard
+          name="Albana Rodriguez Capurro"
+          role="COO"
+          imageRoute="/assets/team/albana.jpg"
+          fact1="Financial Advisor"
+          fact1col="Merryll Lynch"
+          fact2="Head of Trading Desk"
+          fact2col="Quest Capital"
+          fact3="Community Builder"
+          fact3col="Ethereum Uruguay"
         />
       </div>
     </div>
