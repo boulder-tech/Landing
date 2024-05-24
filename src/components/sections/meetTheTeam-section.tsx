@@ -54,7 +54,7 @@ const MeetTheTeam = () => {
         />
         <PersonCard
           name="Pedro Cavanna"
-          role="COO"
+          role="CSO"
           imageRoute="/assets/team/pedro.png"
           fact1="Investor/Developer in"
           fact1col="Real Estate, Finance & Software Companies"
