@@ -11,6 +11,22 @@ const Advisors = () => {
             <div className="flex flex-wrap justify-center gap-8">
                 <PersonCard name="Sebastián López Sansón" imageRoute="/assets/team/sebastian.png" fact1="Co-founder" fact1col="@SyLS" fact2="Leading tech business" fact2col="lawyer & advisor"/>
                 <PersonCard name="Ariel Schapira" imageRoute="/assets/team/ariel.png" fact1="Industrial Engineer & businessman with a" fact1col="long professional career" fact2="Key Executive leading" fact2col="Telecommunications, Energy & Insurance companies"/>
+                <PersonCard
+                    name="Gabriel Cohen"
+                    imageRoute="/assets/team/gabi.png"
+                    fact1="Chief Financial Officer and Director at"
+                    fact1col="Pampa Energía"
+                    fact2="Financial Control Manager"
+                    fact2col={`Treasury and Corporate & Investment Banker at CitiBank`}
+                />
+                 <PersonCard
+                    name="Evan Van Ness"
+                    imageRoute="/assets/team/evan.jpg"
+                    fact1="Former Chief Decentralization Officer"
+                    fact1col="@Ethereum Foundation"
+                    fact2="Venture investor"
+                    fact2col="@TxPoolCapital"
+                />
             </div>
         </div>
     );

@@ -27,7 +27,9 @@ const PersonCard = ({name, role, imageRoute, fact1, fact2, fact3, fact1col, fact
                         <Fact fact={fact2} factcol={fact2col}/>
                         <Fact fact={fact3} factcol={fact3col}/>
                     </div>
-                    <Image src={imageRoute} alt={`Image of ` + name} width={1000} height={1000} className="group-hover:opacity-10 duration-200 z-10"></Image>
+                    <div className="w-full h-full">
+                        <Image src={imageRoute} alt={`Image of ` + name} width={1000} height={1000} className="group-hover:opacity-10 duration-200 z-10"></Image>
+                    </div>
                 </div>
                 <div className="grid gap-2">
                     <h3 className="text-xl text-foreground-heading">{name}</h3>
