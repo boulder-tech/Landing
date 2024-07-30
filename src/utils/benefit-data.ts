@@ -7,40 +7,23 @@ import InstantIcon from '../../public/assets/Instant.svg';
 
 const benefitData = [
   {
-    title: 'Real World',
+    title: 'Web3 experience',
     description:
-      'Tangible assets that exist in the physical world, brought on chain.',
+      'Access traditional financial products entirely on-chain through BoulderTech’s web3 platform, seamlessly bridging DeFi with the real world.',
     icon: RealWorldIcon,
   },
   {
-    title: 'Transparent',
+    title: 'Secure',
     description:
-      'It lowers costs by removing middlemen like lawyers, brokers, banks, etc.',
-    icon: TransparentIcon,
-  },
-  {
-    title: 'Low entry barrier',
-    description:
-      'Accessible and simple, lowering the entry barrier and creating more liquidity',
-    icon: LowEntryIcon,
-  },
-  {
-    title: 'Professional',
-    description:
-      'Token issuer for which a licensing application has been submitted to the Bermuda Monetary Authority.',
+      'Utilizing the ERC3643 token standard, BoulderTech ensures top-notch security for tokenized Real World Assets (RWAs).',
     icon: ProfessionalIcon,
   },
   {
-    title: 'Reduce costs',
-    description: 'By removing middlemen such as lawyers, brokers, and banks.',
-    icon: ReduceIcon,
-  },
-  {
-    title: 'Instant',
+    title: 'Compliant',
     description:
-      'Mint and redeem tokens on-chain, instantly, and on a 24/7 basis.',
-    icon: InstantIcon,
-  },
+      'Operating under the Bermuda Monetary Authority (BMA) license and regulations, BoulderTech adheres to the highest compliance standards. Our commitment to regulatory excellence ensures that your investments are protected and managed with the utmost integrity.',
+    icon: TransparentIcon,
+  }
 ];
 
 export default benefitData;
