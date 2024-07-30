@@ -1,9 +1,6 @@
 import RealWorldIcon from '../../public/assets/real-world.svg';
 import TransparentIcon from '../../public/assets/transparent.svg';
-import LowEntryIcon from '../../public/assets/low-barrier.svg';
 import ProfessionalIcon from '../../public/assets/professional.svg';
-import ReduceIcon from '../../public/assets/reduce-costs.svg';
-import InstantIcon from '../../public/assets/Instant.svg';
 
 const benefitData = [
   {

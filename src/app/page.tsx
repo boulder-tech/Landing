@@ -2,6 +2,8 @@ import HeroSection from "@/components/sections/hero-section";
 import BenefitsSection from "@/components/sections/benefits-section";
 import FinalCtaSection from "@/components/sections/final-cta-section";
 import PartnersSection from "@/components/sections/partners-section";
+import GrantSection from "@/components/sections/grant-support-section";
+import RocketSection from "@/components/sections/rocket-section";
 import Separator from "@/components/separator";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -13,7 +15,9 @@ export default function Home() {
       <HeroSection />
       <Separator orientation="horizontal"/>
       <BenefitsSection/>
-      <PartnersSection/>
+      <GrantSection />
+      {/* <PartnersSection/> */}
+      <RocketSection />
       <FinalCtaSection/>
       <ToastContainer 
         position="bottom-right" 

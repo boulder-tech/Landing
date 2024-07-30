@@ -31,6 +31,7 @@ module.exports = {
       },
       animation: {
         tilt: "tilt 10s infinite linear",
+        hover: 'hover 4s linear infinite'
       },
       keyframes: {
         tilt: {
@@ -44,6 +45,16 @@ module.exports = {
             transform: "rotate(-10deg)",
           }
         },
+        hover: {
+          "0%, 100%": {
+            "transform": "translateY(-20%)",
+            "animation-timing-function": "ease-in-out",
+          },
+          "50%": {
+            "transform": "translateY(-10%)",
+            "animation-timing-function": "ease-in-out",
+          }
+        }
       }
     },
   },

@@ -1,6 +1,5 @@
 import benefitData from "@/utils/benefit-data";
 import BenefitCard from "../cards/benefit-card";
-import PoweredBy from "../cards/poweredby-card";
 
 const BenefitsSection = () => {
   return (
@@ -27,7 +26,6 @@ const BenefitsSection = () => {
           />
         ))}
       </div>
-      <PoweredBy />
     </section>
   );
 };
