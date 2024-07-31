@@ -17,7 +17,9 @@ export default function Home() {
       <BenefitsSection/>
       <GrantSection />
       {/* <PartnersSection/> */}
-      <RocketSection />
+      <div className="relative">
+        <RocketSection />
+      </div>
       <FinalCtaSection/>
       <ToastContainer 
         position="bottom-right" 

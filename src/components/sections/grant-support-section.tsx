@@ -11,7 +11,7 @@ const GrantSection = () => {
           Grant support
         </h2>
         <p className="text-foreground-leading text-base">
-          We are proud recipients of the Arbitrum Foundation's Grants program.
+          We are proud recipients of the Arbitrum Foundation&#39;s Grants program.
         </p>
       </div>
       <div className="px-8 sm:gap-8 gap-4 w-fit flex items-center justify-center z-20">
