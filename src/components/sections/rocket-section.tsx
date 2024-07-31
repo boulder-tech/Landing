@@ -5,7 +5,7 @@ const RocketSection = () => {
     return (
         <>
             <section className="w-full flex items-center justify-center my-40 mb-60 overflow-hidden">
-                <div className="bg-[#0D0E1B] flex items-center justify-start rounded-xl z-20 border border-[#fafbff12] py-20 px-32 w-[65%]">
+                <div className="bg-card-dark flex items-center justify-start rounded-xl z-20 border border-[#fafbff12] py-20 px-32 w-[65%]">
                     <div className="flex flex-col gap-8">
                         <div className="flex flex-col gap-4">
                             <h1 className="font-atyp-display text-5xl leading-[1.1]">{"Meet our"}<br />{"Established Leadership"}</h1>
