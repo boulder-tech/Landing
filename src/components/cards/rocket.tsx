@@ -8,7 +8,6 @@ const Rocket = () => {
     const { scrollYProgress } = useScroll();
     const { transform } = useSpring({
         transform: scrollYProgress.to(y => `translate(${y * 600 - 400}px, ${y * -1200 + 850}px)`),
-        config: { tension: 170, friction: 26 }
     });
     
     return (
