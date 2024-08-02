@@ -11,6 +11,9 @@ module.exports = {
         "atyp-display": ["var(--font-atyp-display)"],
         "atyp-text": ["var(--font-atyp-text)"],
       },
+      screens: {
+        '3xl': '1600px'
+      },
       colors: {
         foreground: {
           heading: "var(--color-foreground-heading)",
