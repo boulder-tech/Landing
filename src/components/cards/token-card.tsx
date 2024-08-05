@@ -24,7 +24,9 @@ const TokenCard = ({className, name, ticker, icon, bgEffect}: Props) => {
             <p className='px-4 text-accent font-medium'>Invest →</p>
         </div>
         <div className='absolute -right-16 -top-20'>
-            <Image quality={80} src={bgEffect} aria-hidden alt='' unselectable='on' className='pointer-events-none select-none sele'></Image>
+            <div className='w-96 h-56'>
+                <Image quality={80} src={bgEffect} aria-hidden alt='' unselectable='on' width={0} height={0} className='w-full h-auto pointer-events-none select-none'></Image>
+            </div>
         </div>
     </Link>
   )

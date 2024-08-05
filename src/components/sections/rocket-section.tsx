@@ -4,7 +4,7 @@ import Rocket from "../cards/rocket";
 const RocketSection = () => {
     return (
         <>
-            <section className="w-full flex items-center justify-center sm:mt-60 mt-10 mb-20 sm:mb-60 overflow-hidden px-8">
+            <section className="w-full flex items-center justify-center sm:mt-20 mt-10 mb-20 overflow-hidden px-8">
                 <div className="md:bg-card-dark bg-card-dark/80 md:backdrop-blur-none backdrop-blur-xl flex items-center justify-start rounded-xl z-20 border border-[#fafbff12] 3xl:py-20 sm:py-16 3xl:px-32 lg:px-20 sm:px-8 p-10 3xl:w-[65%] lg:w-[70%] w-full">
                     <div className="flex flex-col gap-8">
                         <div className="flex flex-col gap-4">
