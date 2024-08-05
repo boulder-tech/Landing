@@ -1,6 +1,5 @@
 import benefitData from "@/utils/benefit-data";
 import BenefitCard from "../cards/benefit-card";
-import PoweredBy from "../cards/poweredby-card";
 
 const BenefitsSection = () => {
   return (
@@ -11,11 +10,10 @@ const BenefitsSection = () => {
       />
       <div className="px-8 grid gap-4">
         <h2 className="font-atyp-display text-[32px] -tracking-[0.72px] text-transparent bg-clip-text bg-gradient-to-t from-[#FAFBFF] to-[#B3B9CB]">
-          Boulder Tokens
+          Why choose Boulder Tech?
         </h2>
         <p className="text-foreground-leading text-base">
-          Fully tokenized securities mirroring the value of RWA’s. The next
-          generation of financial assets.
+          Unlock the future of secure, compliant, and on-chain investments.
         </p>
       </div>
       <div className="px-8 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 w-fit items-center place-items-center justify-center justify-items-center">
@@ -28,7 +26,6 @@ const BenefitsSection = () => {
           />
         ))}
       </div>
-      <PoweredBy />
     </section>
   );
 };

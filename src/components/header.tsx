@@ -46,7 +46,7 @@ const Header = () => {
                 href={"https://docs.bouldertech.fi"}
                 target="_blank"
               >
-                Documentation ↗
+                Documentation 
               </Link>
             </div>
           </div>

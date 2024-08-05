@@ -11,6 +11,9 @@ module.exports = {
         "atyp-display": ["var(--font-atyp-display)"],
         "atyp-text": ["var(--font-atyp-text)"],
       },
+      screens: {
+        '3xl': '1600px'
+      },
       colors: {
         foreground: {
           heading: "var(--color-foreground-heading)",
@@ -27,10 +30,14 @@ module.exports = {
           "100": "var(--color-grey-100)",
           "200": "var(--color-grey-200)",
           "300": "var(--color-grey-300)",
+        },
+        card: {
+          dark: "#0D0E1B"
         }
       },
       animation: {
         tilt: "tilt 10s infinite linear",
+        hover: 'hover 4s linear infinite'
       },
       keyframes: {
         tilt: {
@@ -44,6 +51,16 @@ module.exports = {
             transform: "rotate(-10deg)",
           }
         },
+        hover: {
+          "0%, 100%": {
+            "transform": "translateY(-20%)",
+            "animation-timing-function": "ease-in-out",
+          },
+          "50%": {
+            "transform": "translateY(-10%)",
+            "animation-timing-function": "ease-in-out",
+          }
+        }
       }
     },
   },
