@@ -15,7 +15,7 @@ const StocksSection = () => {
             <p className='md:hidden flex text-foreground-leading leading-normal text-base 2xl:text-lg xl:max-w-none sm:max-w-[38rem]'>{"Each token is backed by financial assets, providing a secure and compliant way to access to TradFi via crypto."}</p>
             <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg xl:max-w-none sm:max-w-[38rem]'>{"Each token is backed by actual financial assets, offering a secure and compliant way to diversify your portfolio. This backing ensures real-world value and stability, making your investment both reliable and robust."}</p>
         </div>
-        <div className='relative flex flex-col xl:items-end items-center xl:justify-end justify-center w-fit xl:gap-0 gap-4'>
+        <div className='relative flex flex-col xl:items-end items-center xl:justify-end justify-center xl:gap-0 gap-4 w-full'>
             <TokenCard className='z-20' name='S&P 500 UCITS ETF' ticker='CSPX' icon={cspxIcon} bgEffect={cspxEffect}></TokenCard>
             <TokenCard className='z-30 xl:mr-32 xl:flex absolute top-auto xl:-top-6' name='Invesco QQQ Trust Series 1' ticker='QQQ' icon={qqqIcon} bgEffect={qqqEffect}></TokenCard>
             <TokenCard className='z-40 xl:mr-64 xl:flex absolute top-auto xl:-top-12' name='Treasury Bond 0-1yr UCITS' ticker='IB01' icon={ib01Icon} bgEffect={ib01Effect}></TokenCard>
