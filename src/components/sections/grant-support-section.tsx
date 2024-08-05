@@ -18,7 +18,7 @@ const GrantSection = () => {
         <div className="w-fit h-fit animate-hover sm:mt-16 mt-2">
           <Image quality={100} src={coinAsset} alt="Arbitrum 3D Coin" width={207} height={207} className="sm:w-auto w-32 select-none"></Image>
         </div>
-        <Image src={textAsset} alt="Arbitrum Text" width={392.5} height={68} className="sm:w-auto w-48 sm:flex hidden"></Image>
+        <Image src={textAsset} alt="Arbitrum Text" width={392.5} height={68} className="sm:w-auto w-48"></Image>
       </div>
       <span
         className="absolute pointer-events-none z-0 top-[37%] left-[25%] w-[33rem] h-[23rem] blur-[275px] rounded-full bg-accent"
