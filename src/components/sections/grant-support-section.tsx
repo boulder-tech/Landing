@@ -1,6 +1,7 @@
 import Image from "next/image";
 import coinAsset from "../../../public/assets/arbiCoin.png";
-import textAsset from "../../../public/assets/arbiText.png";
+import textTitleAsset from "../../../public/assets/arbiTitle.png";
+import textSubtitleAsset from "../../../public/assets/arbiFoundation.png";
 import PoweredBy from "../cards/poweredby-card";
 
 const GrantSection = () => {
@@ -16,9 +17,12 @@ const GrantSection = () => {
       </div>
       <div className="px-8 sm:gap-8 gap-4 w-fit flex sm:flex-row flex-col items-center justify-center z-20">
         <div className="w-fit h-fit animate-hover sm:mt-16 mt-2">
-          <Image quality={100} src={coinAsset} alt="Arbitrum 3D Coin" width={207} height={207} className="sm:w-auto w-32 select-none"></Image>
+          <Image quality={100} src={coinAsset} alt="Arbitrum 3D Coin" width={207} height={207} className="sm:w-fit w-36 select-none"></Image>
         </div>
-        <Image src={textAsset} alt="Arbitrum Text" width={392.5} height={68} className="sm:w-auto w-48"></Image>
+        <div className="flex flex-col sm:items-start items-center gap-1 select-none">
+          <Image src={textTitleAsset} alt="Arbitrum Text Title" width={392.5} height={38.34} className="sm:w-auto w-48"></Image>
+          <Image src={textSubtitleAsset} alt="Arbitrum Text Title" width={283.97} height={23.13} className="sm:w-fit w-36"></Image>
+        </div>
       </div>
       <span
         className="absolute pointer-events-none z-0 top-[37%] left-[25%] w-[33rem] h-[23rem] blur-[275px] rounded-full bg-accent"
