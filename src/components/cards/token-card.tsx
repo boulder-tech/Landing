@@ -12,12 +12,12 @@ interface Props {
 
 const TokenCard = ({className, name, ticker, icon, bgEffect}: Props) => {
   return (
-    <Link target='__blank' href={`https://app.bouldertech.fi/${ticker.toLowerCase()}`} className={`flex flex-col justify-between items-start w-[27rem] h-[12rem] p-6 rounded-xl border border-[#fafbff12] bg-card-dark relative overflow-hidden group ${className}`}>
+    <Link target='__blank' href={`https://app.bouldertech.fi/${ticker.toLowerCase()}`} className={`flex flex-col justify-between items-start  md:w-[27rem] md:h-[12rem] w-[20rem] h-[10rem] p-6 rounded-xl border border-[#fafbff12] bg-card-dark relative overflow-hidden group ${className}`}>
         <div className='flex flex-col gap-3 z-10'>
-            <h3 className='font-atyp-display text-2xl'>{name}</h3>
+            <h3 className='font-atyp-display md:text-2xl text-xl'>{name}</h3>
             <div className='flex gap-2 items-center'>
-                <Image src={icon} width={40} height={40} alt={ticker + " icon"}></Image>
-                <p className='text-foreground-leading text-xl'>{ticker}</p>
+                <Image src={icon} width={40} height={40} alt={ticker + " icon"} className='md:w-fit w-8'></Image>
+                <p className='text-foreground-leading md:text-xl text-lg'>{ticker}</p>
             </div>
         </div>
         <div className='w-full h-fit flex justify-end items-center z-10'>
