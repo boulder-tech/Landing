@@ -60,7 +60,7 @@ const Header = () => {
             />
           </GhostButton>
           <Link href={"/#waitlist"} className="hidden sm:block">
-            <GhostButton>Join waitlist →</GhostButton>
+            <GhostButton>Sign up for Beta</GhostButton>
           </Link>
         </div>
       </header>
@@ -104,7 +104,7 @@ const Header = () => {
           href={"/#waitlist"}
           onClick={toggleMenu}
         >
-          Join waitlist
+          Sign up for Beta
         </Link>
       </div>
     </>

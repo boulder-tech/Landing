@@ -56,7 +56,7 @@ const Waitlist = () => {
             className="px-2 w-full font-medium outline-none border-none bg-transparent text-foreground-heading text-sm placeholder:text-foreground-dark"
             placeholder="Email address..."
           />
-          <BrandButton>Join waitlist →</BrandButton>
+          <BrandButton>Sign up for Beta →</BrandButton>
         </form>
     );
   };
