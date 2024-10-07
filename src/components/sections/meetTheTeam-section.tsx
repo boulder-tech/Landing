@@ -24,17 +24,6 @@ const MeetTheTeam = () => {
           fact3col="@MercadoLibre"
         />
         <PersonCard
-          name="Alberto Guerrero Montilla"
-          role="CMO"
-          imageRoute="/assets/team/albert.png"
-          fact1="Co-Founder"
-          fact1col="Criptotendencias"
-          fact2="Co-Founder"
-          fact2col="EOS Venezuela Block Producer"
-          fact3="Head of Growth"
-          fact3col="SenseiNode"
-        />
-        <PersonCard
           name="Pablo Hegoburu"
           role="CTO"
           imageRoute="/assets/team/pablo_1.jpg"
