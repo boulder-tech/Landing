@@ -18,7 +18,17 @@ const Advisors = () => {
                     fact2="Financial Control Manager"
                     fact2col={`Treasury and Corporate & Investment Banker at CitiBank`}
                 />
-                 <PersonCard
+                <PersonCard
+                    name="Martin Lawson"
+                    imageRoute="/assets/team/martin.png"
+                    fact1="Mentor at"
+                    fact1col="Endeavor"
+                    fact2="Advisor at"
+                    fact2col="Mercado Libre"
+                    fact3="Former Marketplace VIS VP and Classifieds Director at"
+                    fact3col="Mercado Libre"
+                />
+                <PersonCard
                     name="Evan Van Ness"
                     imageRoute="/assets/team/evan.jpg"
                     fact1="Former Chief Decentralization Officer"
