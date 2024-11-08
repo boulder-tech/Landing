@@ -16,12 +16,12 @@ const MeetTheTeam = () => {
           name="Rodrigo Benzaquen"
           role="CEO"
           imageRoute="/assets/team/rodri.png"
-          fact1="Co-founder & CTO"
-          fact1col="@SenseiNode"
+          fact1="15y working for "
+          fact1col="MercadoLibre"
           fact2="Co-founder & CEO"
           fact2col="@Nubeliu"
-          fact3="Early tech employee"
-          fact3col="@MercadoLibre"
+          fact3="Early crypto adopter"
+          fact3col=""
         />
         <PersonCard
           name="Pablo Hegoburu"
