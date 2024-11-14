@@ -6,6 +6,7 @@ export async function sendEmail({email, name, org, message}: {email: string, nam
     const EMAIL = process.env.NEXT_PUBLIC_EMAIL;
     const PASS = process.env.NEXT_PUBLIC_PASS;
     const EMAILTO = process.env.NEXT_PUBLIC_TOEMAIL;
+    const BACKEND_URL = process.env.BACKEND_URL;
     
     // Conection with nodemailer
     const mailTransporter = nodemailer.createTransport({
@@ -37,12 +38,25 @@ export async function sendEmail({email, name, org, message}: {email: string, nam
             if (err) {
                 console.error(err);
                 reject(err);
-                return { success: false , err };
             } else {
                 console.log(info);
                 resolve(info);
-                return { success: true , info };
             }
         });
     });
+
+    // Save email
+    try {
+        await fetch(`${BACKEND_URL}api/wait-list/signup`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email }),
+        });
+    } catch (e) {
+        console.log(e);
+    }
+
+    return { success: true };
 }
