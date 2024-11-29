@@ -4,6 +4,7 @@ import Link from 'next/link';
 import X from '../../../public/icons/x-social-media-round-icon.svg';
 import Medium from '../../../public/icons/medium-round-icon.svg';
 import Linkedin from '../../../public/icons/linkedin-round-icon.svg';
+import Telegram from '../../../public/icons/telegram-icon.svg';
 
 import './styles/footer.css';
 
@@ -59,6 +60,20 @@ const Footer = () => {
                         >
                             <Image
                                 src={Linkedin}
+                                width={30}
+                                height={30}
+                                className="Icons__TwitterIcon-sc-dy67gv-2 ipWMgx"
+                                alt="icon"
+                            />
+                        </a>
+                        <a
+                            href="https://t.me/+I05vwrkKMe1jNzMx"
+                            rel="noreferrer noopenner"
+                            target="_blank"
+                            className="pages__OutboundLink-sc-1hmqm-24 irHuFq"
+                        >
+                            <Image
+                                src={Telegram}
                                 width={30}
                                 height={30}
                                 className="Icons__TwitterIcon-sc-dy67gv-2 ipWMgx"
