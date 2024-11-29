@@ -21,7 +21,7 @@ const GrantSection = () => {
         </div>
         <div className="flex flex-col sm:items-start items-center gap-1 select-none">
           <Image src={textTitleAsset} alt="Arbitrum Text Title" width={392.5} height={38.34} className="sm:w-auto w-48"></Image>
-          <Image src={textSubtitleAsset} alt="Arbitrum Text Title" width={283.97} height={23.13} className="sm:w-fit w-36"></Image>
+          <Image src={textSubtitleAsset} alt="Arbitrum Text SubTitle" width={283.97} height={23.13} className="sm:w-fit w-36"></Image>
         </div>
       </div>
       <span
