@@ -13,7 +13,7 @@ interface Props {
 
 const TokenCard = ({className, ticker, icon, url, bgColor, isLight}: Props) => {
     return (
-        <div className={`flex items-center justify-center h-36 w-40 rounded-lg ${bgColor} ${!isLight ? 'text-text-white' : 'text-text-black'}`}>
+        <div className={`flex items-center justify-center h-20 sm:h-36 w-full sm:w-40 rounded-lg ${bgColor} ${!isLight ? 'text-text-white' : 'text-text-black'}`}>
             <div className='flex gap-2 items-center justify-center'>
                 <Image src={icon} width={25} height={25} alt={ticker + " icon"} className='md:w-fit w-8'></Image>
                 <p className='md:text-2xl font-medium text-lg'>{ticker}</p>
