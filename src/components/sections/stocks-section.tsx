@@ -17,11 +17,11 @@ const StocksSection = () => {
             <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[39rem]'>{"Each token is backed by actual financial assets, offering a secure and compliant way to diversify your portfolio. This backing ensures real-world value and stability, making your investment both reliable and robust."}</p>
         </div>
         <div className='flex flex-wrap gap-3 sm:gap-5 items-center justify-center z-10'>
-            <TokenCard ticker='CSPX' icon={cspxIcon} url='./' bgColor='bg-[#C42933]'></TokenCard>
-            <TokenCard ticker='CNDX' icon={cndxIcon} url='./' bgColor='bg-[#193A8A]'></TokenCard>
-            <TokenCard ticker='IB01' icon={ib01Icon} url='./' bgColor='bg-[#FFFFFF]' isLight></TokenCard>
-            <TokenCard ticker='IRSA' icon={irsIcon} url='./' bgColor='bg-[#407D70]'></TokenCard>
-            <TokenCard ticker='GD30D' icon={gd30dIcon} url='./' bgColor='bg-[#5298E0]'></TokenCard>
+            <TokenCard ticker='CSPX' icon={cspxIcon} url='https://app.bouldertech.fi/sp500' bgColor='bg-[#C42933]'></TokenCard>
+            <TokenCard ticker='CNDX' icon={cndxIcon} url='https://app.bouldertech.fi/nsdq' bgColor='bg-[#193A8A]'></TokenCard>
+            <TokenCard ticker='IB01' icon={ib01Icon} url='https://app.bouldertech.fi/ib01' bgColor='bg-[#FFFFFF]' isLight></TokenCard>
+            <TokenCard ticker='IRSA' icon={irsIcon} url='https://app.bouldertech.fi/irsa' bgColor='bg-[#407D70]'></TokenCard>
+            <TokenCard ticker='GD30D' icon={gd30dIcon} url='https://app.bouldertech.fi/gd30d' bgColor='bg-[#5298E0]'></TokenCard>
         </div>
         <div className="hidden md:flex absolute w-full bottom-0 z-0">
           <Image src={gridEffect} alt='' aria-hidden className="object-cover pointer-events-none"></Image>
