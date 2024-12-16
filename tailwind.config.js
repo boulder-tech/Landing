@@ -15,6 +15,10 @@ module.exports = {
         '3xl': '1600px'
       },
       colors: {
+        text: {
+          black: "var(--color-text-black)",
+          white: "var(--color-text-white)",
+        },
         foreground: {
           heading: "var(--color-foreground-heading)",
           leading: "var(--color-foreground-leading)",

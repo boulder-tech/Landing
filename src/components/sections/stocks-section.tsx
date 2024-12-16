@@ -1,29 +1,31 @@
 import React from 'react'
 import TokenCard from '../cards/token-card';
-import cspxIcon from "../../../public/assets/tokens/cspx.png";
-import cspxEffect from "../../../public/assets/tokens/effects/cspxEffect.png";
-import ib01Icon from "../../../public/assets/tokens/ib01.png";
-import ib01Effect from "../../../public/assets/tokens/effects/ib01Effect.png";
-import qqqIcon from "../../../public/assets/tokens/qqq.png";
-import qqqEffect from "../../../public/assets/tokens/effects/qqqEffect.png";
+import cspxIcon from "../../../public/assets/tokens/cspx.svg";
+import ib01Icon from "../../../public/assets/tokens/ib01.svg";
+import cndxIcon from "../../../public/assets/tokens/cndx.svg";
+import irsIcon from "../../../public/assets/tokens/irs.svg";
+import gd30dIcon from "../../../public/assets/tokens/gd30d.svg";
+import gridEffect from "../../../public/assets/gridEffect.png";
+import Image from 'next/image';
 
 const StocksSection = () => {
   return (
-    <section className='w-full flex xl:flex-row flex-col items-start justify-center lg:mt-40 mt-20 mb-20 relative sm:px-16 px-4 xl:gap-0 gap-8'>
-        <div className='flex flex-col xl:gap-6 gap-4 xl:items-start xl:justify-start justify-center items-center xl:max-w-[40rem] w-full xl:text-left text-center'>
-            <h1 className='font-atyp-display text-3xl 2xl:text-5xl font-normal leading-tight'>Stocks & Bonds <span className='whitespace-nowrap'>On-Chain</span></h1>
-            <p className='md:hidden flex text-foreground-leading leading-normal text-base 2xl:text-lg xl:max-w-none sm:max-w-[38rem]'>{"Each token is backed by financial assets, providing a secure and compliant way to access to TradFi via crypto."}</p>
-            <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg xl:max-w-none sm:max-w-[38rem]'>{"Each token is backed by actual financial assets, offering a secure and compliant way to diversify your portfolio. This backing ensures real-world value and stability, making your investment both reliable and robust."}</p>
+    <section className="w-full flex flex-col items-center justify-center sm:px-16 px-4 gap-14 pb-32 pt-32 relative">
+        <div className='flex flex-col xl:gap-6 gap-4 justify-center items-center w-full text-center z-10'>
+            <h1 className='font-atyp-display text-3xl 2xl:text-5xl font-light leading-tight'>Stocks & Bonds <span className='whitespace-nowrap'>On-Chain</span></h1>
+            <p className='md:hidden flex text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[39rem]'>{"Each token is backed by financial assets, providing a secure and compliant way to access to TradFi via crypto."}</p>
+            <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[39rem]'>{"Each token is backed by actual financial assets, offering a secure and compliant way to diversify your portfolio. This backing ensures real-world value and stability, making your investment both reliable and robust."}</p>
         </div>
-        <div className='relative flex flex-col xl:items-end items-center xl:justify-end justify-center xl:gap-0 gap-4 xl:w-fit w-full'>
-            <TokenCard className='z-20' name='S&P 500 UCITS ETF' ticker='CSPX' icon={cspxIcon} bgEffect={cspxEffect}></TokenCard>
-            <TokenCard className='z-30 xl:mr-32 xl:flex absolute top-auto xl:-top-6' name='Invesco QQQ Trust Series 1' ticker='QQQ' icon={qqqIcon} bgEffect={qqqEffect}></TokenCard>
-            <TokenCard className='z-40 xl:mr-64 xl:flex absolute top-auto xl:-top-12' name='Treasury Bond 0-1yr UCITS' ticker='IB01' icon={ib01Icon} bgEffect={ib01Effect}></TokenCard>
+        <div className='flex flex-wrap gap-5 items-center justify-center z-10'>
+            <TokenCard ticker='CSPX' icon={cspxIcon} url='./' bgColor='bg-[#C42933]'></TokenCard>
+            <TokenCard ticker='CNDX' icon={cndxIcon} url='./' bgColor='bg-[#193A8A]'></TokenCard>
+            <TokenCard ticker='IB01' icon={ib01Icon} url='./' bgColor='bg-[#FFFFFF]' isLight></TokenCard>
+            <TokenCard ticker='IRSA' icon={irsIcon} url='./' bgColor='bg-[#407D70]'></TokenCard>
+            <TokenCard ticker='GD30D' icon={gd30dIcon} url='./' bgColor='bg-[#5298E0]'></TokenCard>
         </div>
-        <span
-            className="absolute pointer-events-none z-10 top-[15%] left-[10%] w-[50rem] h-[6rem] blur-[200px] rounded-full bg-accent"
-            aria-hidden="true"
-        />
+        <div className="absolute w-full bottom-0 z-0">
+          <Image src={gridEffect} alt='' aria-hidden className="object-cover pointer-events-none"></Image>
+        </div>
     </section>
   )
 }

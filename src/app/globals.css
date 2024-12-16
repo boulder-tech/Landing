@@ -16,6 +16,8 @@
   --color-foreground-dark: #485069;
   --color-background: #010312;
   --color-accent: #245BFF;
+  --color-text-black: #121212;
+  --color-text-white: #FFFFFF;
   --color-grey-100: rgba(250, 251, 255, 0.04);
   --color-grey-200: rgba(250, 251, 255, 0.08);
   --color-grey-300: rgba(250, 251, 255, 0.12);
