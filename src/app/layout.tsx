@@ -4,7 +4,6 @@ import clsx from "clsx";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/sections/footer";
-import { GoogleAnalytics } from '@next/third-parties/google'
 
 const atypDisplay = localFont({
   variable: "--font-atyp-display",
@@ -69,7 +68,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </main>
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID as string} />
+        {/* <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID as string} /> */}
       </body>
     </html>
   );
