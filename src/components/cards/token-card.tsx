@@ -18,7 +18,7 @@ const TokenCard = ({className, ticker, icon, url, bgColor, isLight}: Props) => {
                 <Image src={icon} width={25} height={25} alt={ticker + " icon"} className='md:w-fit w-8'></Image>
                 <p className='md:text-2xl font-medium text-lg'>{ticker}</p>
             </div>
-            <div className='absolute -bottom-4 sm:-bottom-5 sm:group-hover:bottom-[3.75rem] group-hover:bottom-7 transition-all duration-300 ease-in-out'>
+            <div className='absolute -bottom-5 sm:group-hover:bottom-[3.75rem] group-hover:bottom-7 transition-all duration-300 ease-in-out'>
                 <p className='font-medium'>More Info ↗</p>
             </div>
         </Link>
