@@ -1,4 +1,4 @@
-import Waitlist from "../buttons/waitlist-input";
+import { BrandLink } from "../buttons/brand-button";
 
 const FinalCtaSection = () => {
   return (
@@ -9,7 +9,9 @@ const FinalCtaSection = () => {
           Boulder Tech
         </span>
       </h1>
-      <Waitlist />
+      <BrandLink href="https://app.bouldertech.fi/">
+        Launch App →
+      </BrandLink>
     </section>
   );
 };

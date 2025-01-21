@@ -1,7 +1,6 @@
 import Image from "next/image";
 import EarthModel from "../earth";
-import BrandButton from "../buttons/brand-button";
-import Waitlist from "../buttons/waitlist-input";
+import { BrandLink } from "../buttons/brand-button";
 
 const HeroSection = () => {
   return (
@@ -31,7 +30,9 @@ const HeroSection = () => {
         <h3 className="text-foreground-leading text-xl font-medium z-10">
           Buy and sell TradFi products on web3
         </h3>
-        <Waitlist />
+        <BrandLink href="https://app.bouldertech.fi/">
+          Launch App →
+        </BrandLink>
       </div>
     </section>
   );

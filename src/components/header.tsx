@@ -59,8 +59,8 @@ const Header = () => {
               className="w-4 h-4 absolute"
             />
           </GhostButton>
-          <Link href={"/#waitlist"} className="hidden sm:block">
-            <GhostButton>Sign up for Beta</GhostButton>
+          <Link href={"https://app.bouldertech.fi/"} className="hidden sm:block">
+            <GhostButton>Launch App</GhostButton>
           </Link>
         </div>
       </header>
@@ -101,10 +101,10 @@ const Header = () => {
         </Link>
         <Link
           className="cursor-pointer text-3xl font-medium hover:opacity-50 transition-all duration-200"
-          href={"/#waitlist"}
+          href={"https://app.bouldertech.fi/"}
           onClick={toggleMenu}
         >
-          Sign up for Beta
+          Launch App
         </Link>
       </div>
     </>

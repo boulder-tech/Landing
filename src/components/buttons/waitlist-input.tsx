@@ -1,6 +1,6 @@
 'use client';
 import { sendEmail } from '@/app/_actions';
-import BrandButton from "./brand-button";
+import { BrandButton } from "./brand-button";
 import React from 'react';
 
 import { toast } from 'react-toastify';

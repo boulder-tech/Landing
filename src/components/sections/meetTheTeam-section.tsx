@@ -41,17 +41,6 @@ const MeetTheTeam = () => {
           fact2="Key Executive"
           fact2col="Pharmaceutical Industry"
         />
-        <PersonCard
-          name="Albana Rodriguez Capurro"
-          role="COO"
-          imageRoute="/assets/team/albana.jpg"
-          fact1="Financial Advisor"
-          fact1col="Merryll Lynch"
-          fact2="Head of Trading Desk"
-          fact2col="Quest Capital"
-          fact3="Community Builder"
-          fact3col="Ethereum Uruguay"
-        />
       </div>
     </div>
   );
