@@ -1,6 +1,7 @@
 ---
 title: 'Greetings to the Global Blockchain Community'
 image: 'GlobalCommunity.webp'
+date: '2023-12-22'
 ---
 
 

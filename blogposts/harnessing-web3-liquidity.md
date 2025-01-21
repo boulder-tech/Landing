@@ -1,6 +1,7 @@
 ---
 title: 'Harnessing Web3 Liquidity: A New Frontier for Real World Assets like T-Bills and GD30D'
 image: 'harnessingWeb3.png'
+date: '2023-12-23'
 ---
 
 ## The Urgency of Modernizing Government Debt Instruments

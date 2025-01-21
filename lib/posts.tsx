@@ -18,9 +18,6 @@ export function getSortedPostsData() {
         const fullPath = path.join(postsDirectory, fileName);
         const fileContents = fs.readFileSync(fullPath, 'utf8');
 
-        //Get file creation date
-        const dateCreated = fs.statSync(fullPath).birthtime;
-
         // Use gray-matter to parse the post metadata section
         const matterResult = matter(fileContents);
 
@@ -35,7 +32,7 @@ export function getSortedPostsData() {
         const blogPost: BlogPost = {
             id,
             title: matterResult.data.title,
-            date: dateCreated,
+            date: matterResult.data.date,
             readTime: readTime,
             image: matterResult.data.image,
             preview: preview,
@@ -45,14 +42,12 @@ export function getSortedPostsData() {
         return blogPost
     });
     // Sort posts by date
-    return allPostsData.sort((a, b) => a.date < b.date ? 1 : -1);
+    return allPostsData.sort((a, b) => new Date(a.date) < new Date(b.date) ? 1 : -1);
 }
 
 export async function getPostData(id: string) {
     const fullPath = path.join(postsDirectory, `${id}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
-
-    const dateCreated = fs.statSync(fullPath).birthtime;
 
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
@@ -74,7 +69,7 @@ export async function getPostData(id: string) {
     const blogPostWithHTML: BlogPost & { contentHtml: string } = {
         id,
         title: matterResult.data.title,
-        date: dateCreated,
+        date: matterResult.data.date,
         readTime: readTime,
         image: matterResult.data.image,
         preview: preview,
