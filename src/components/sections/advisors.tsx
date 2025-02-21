@@ -38,10 +38,8 @@ const Advisors = () => {
         <PersonCard
           name="Evan Van Ness"
           imageRoute="/assets/team/evan.jpg"
-          fact1="Former Chief Decentralization Officer"
-          fact1col="@Ethereum Foundation"
-          fact2="Venture investor"
-          fact2col="@TxPoolCapital"
+          fact1="Venture investor"
+          fact1col="@TxPoolCapital"
         />
       </div>
     </div>
