@@ -1,6 +1,6 @@
 ---
 title: 'What does Bouldertech do?'
-image: 'What_does_bouldertech_do.jpg'
+image: 'What_does_bouldertch_do.jpg'
 date: '2025-2-25'
 ---
 # BoulderTech's Business Model
