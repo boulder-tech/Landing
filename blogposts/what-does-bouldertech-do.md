@@ -20,13 +20,12 @@ BoulderTech tokens provide access to markets that traditionally had high barrier
 The process at BoulderTech is straightforward:
 
 1. **Account Creation:** Users register an account and complete the KYC verification process.
-2. **Token Purchase:** Once verified, users can purchase tokens that represent a real asset (Real World Assets).
+2. **Token Purchase:** Once verified, users can purchase tokens that represent a real asset (Real World Assets/RWA). It's important to highlight that, in alignment with the principles of decentralization in the crypto world, once purchased, these tokens and the assets they represent remain in the user's personal wallet. BoulderTech does not retain custody of these assets, thus ensuring complete and direct ownership by the users. This integration between the accessibility of traditional market assets and the security and autonomy offered by blockchain technology places power directly in the hands of our clients.
 3. **Investment Management:** Users can manage their investments directly from the platform, which displays detailed information about the asset's performance and offers the possibility of selling the tokens on a secondary market.
-4. **Token Purchase:** Once verified, users can acquire tokens that represent a real asset (Real World Assets / RWA). It's important to highlight that, in alignment with the principles of decentralization in the crypto world, once purchased, these tokens and the assets they represent remain in the user's personal wallet. BoulderTech does not retain custody of these assets, thus ensuring complete and direct ownership by the users. This integration between the accessibility of traditional market assets and the security and autonomy offered by blockchain technology places power directly in the hands of our clients.
 
-## Differentiation from 'Meme Coins'
+## Token Differentiation
 
-Unlike 'meme coins', which are often driven by trends and lack tangible backing, BoulderTech's tokens are firmly anchored in real assets with inherent value. This provides much greater stability and predictability for investors, who can trust in the security and transparency of their investments.
+Unlike other tokens that are often influenced by ephemeral trends and lack a solid foundation, BoulderTech's tokens are backed by real assets that have market value. This backing is tied to financial assets listed on leading world stock exchanges. This provides greater stability and predictability for investors, who can trust in the security and transparency of their investments.
 
 ## Conclusion
 
