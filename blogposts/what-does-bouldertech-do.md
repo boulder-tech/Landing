@@ -1,5 +1,5 @@
 ---
-title: 'What does Bouldertech do?'
+title: 'What does BoulderTech do?'
 image: 'What_does_bouldertch_do.jpg'
 date: '2025-2-25'
 ---
