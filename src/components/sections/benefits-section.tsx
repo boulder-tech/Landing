@@ -10,10 +10,10 @@ const BenefitsSection = () => {
       />
       <div className="px-8 grid gap-4">
         <h2 className="font-atyp-display text-[32px] -tracking-[0.72px] text-transparent bg-clip-text bg-gradient-to-t from-[#FAFBFF] to-[#B3B9CB]">
-          Why choose Boulder Tech?
+          Why BoulderTech?
         </h2>
         <p className="text-foreground-leading text-base">
-          Unlock the future of secure, compliant, and on-chain investments.
+        On-chain investments. Secure by design, Compliant by default
         </p>
       </div>
       <div className="px-8 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 w-fit items-center place-items-center justify-center justify-items-center">

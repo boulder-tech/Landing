@@ -21,7 +21,7 @@ const Footer = () => {
                         className='sm:w-80 w-64'
                     />
                     <p className="text-foreground-dark font-medium">
-                        Social networks
+                        Join the conversation
                     </p>
                     <nav className="pages__StyledSocialRow-sc-1hmqm-8 kTUbOm">
                         <a

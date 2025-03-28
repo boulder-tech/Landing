@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Imagotype from "./imagotype";
+import Imagotype from "../../public/assets/imagotype.svg";
 import GhostButton from "./buttons/ghost-button";
 import Image from "next/image";
 import clsx from "clsx";
@@ -20,7 +20,7 @@ const Header = () => {
         <div className="flex items-center justify-between 2xl:px-[300px] lg:px-[150px] md:px-[75px] px-[20px]">
           <div className="flex gap-4 items-center justify-center divide-border-grey-200 divide-x-[1px]">
             <Link href={"/"}>
-              <Imagotype />
+              <Image src={Imagotype} alt="Logo BoulderTech" width={120}></Image>
             </Link>
             <div className="pl-4 text-boulder-text sm:flex hidden text-sm gap-4 font-normal -tracking-[0.28px]">
               <Link

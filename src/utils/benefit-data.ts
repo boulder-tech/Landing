@@ -4,9 +4,9 @@ import ProfessionalIcon from '../../public/assets/professional.svg';
 
 const benefitData = [
   {
-    title: 'Web3 experience',
+    title: 'Frictionless experience',
     description:
-      'Access traditional financial products entirely on-chain through BoulderTech’s web3 platform, seamlessly bridging DeFi with the real world.',
+      'Crypto-native at heart. Obsessed with UX. BoulderTech bridges DeFi and traditional finance — seamlessly.',
     icon: RealWorldIcon,
   },
   {
@@ -18,7 +18,7 @@ const benefitData = [
   {
     title: 'Compliant',
     description:
-      'Operating under the Bermuda Monetary Authority (BMA) license and regulations, BoulderTech adheres to the highest compliance standards. Our commitment to regulatory excellence ensures that your investments are protected and managed with the utmost integrity.',
+      'Operating under the Bermuda Monetary Authority (BMA) license and regulations, BoulderTech adheres to the highest compliance standards.',
     icon: TransparentIcon,
   }
 ];
