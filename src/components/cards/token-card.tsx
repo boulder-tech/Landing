@@ -1,4 +1,3 @@
-import { assert } from 'console'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -15,14 +14,14 @@ interface Props {
 
 const TokenCard = ({className, asset, ticker, icon, url, bgColor, isLight}: Props) => {
     return (
-        <Link href={url} target='_blank' className={`flex items-center justify-center h-20 sm:h-40 w-full sm:w-44 rounded-lg group overflow-hidden relative cursor-pointer ${bgColor} ${!isLight ? 'text-text-white' : 'text-text-black'} ${className}`}>
+        <Link href={url} target='_blank' className={`flex items-center justify-center h-20 sm:h-40 w-full sm:w-40 rounded-lg group overflow-hidden relative cursor-pointer ${bgColor} ${!isLight ? 'text-text-white' : 'text-text-black'} ${className}`}>
             <div className='flex flex-col items-center gap-2 group-hover:opacity-0 duration-100'>
                 <div className='flex gap-2 items-center justify-center'>
                     <Image src={icon} width={25} height={25} alt={asset + " icon"} className='md:w-fit w-8'></Image>
                     <p className='md:text-2xl font-medium text-lg'>{asset}</p>
                 </div>
-                <div className='grid  text-center text-sm' >
-                    <p>Tokenized as</p>
+                <div className='sm:grid flex sm:gap-0 gap-1 text-center text-sm' >
+                    <p>Tokenized as </p>
                     <p>{ticker}</p>
                 </div>
                 

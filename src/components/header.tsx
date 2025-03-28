@@ -6,7 +6,6 @@ import Image from "next/image";
 import clsx from "clsx";
 import Hamburger from "../../public/icons/hamburger.svg";
 import { useState } from "react";
-import { px } from "framer-motion";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);

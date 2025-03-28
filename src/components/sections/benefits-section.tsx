@@ -10,7 +10,7 @@ const BenefitsSection = () => {
       />
       <div className="px-8 grid gap-4">
         <h2 className="font-atyp-display text-[32px] -tracking-[0.72px] text-transparent bg-clip-text bg-gradient-to-t from-[#FAFBFF] to-[#B3B9CB]">
-          Why Boulder Tech?
+          Why BoulderTech?
         </h2>
         <p className="text-foreground-leading text-base">
         On-chain investments. Secure by design, Compliant by default
