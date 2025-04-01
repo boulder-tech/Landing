@@ -6,7 +6,7 @@ const FinalCtaSection = () => {
       <h1 className="z-10 font-atyp-display sm:text-6xl text-[35px] font-medium max-w-4xl text-center">
       Dive into Hyper-Tokenization with {" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00B2FF] to-[#245BFF] whitespace-nowrap">
-          Boulder Tech
+          BoulderTech
         </span>
       </h1>
       <BrandLink href="https://app.bouldertech.fi/">
