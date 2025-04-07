@@ -41,6 +41,17 @@ const MeetTheTeam = () => {
           fact2="Key Executive"
           fact2col="Pharmaceutical Industry"
         />
+        <PersonCard
+          name="Tomás Bresler"
+          role="COO"
+          imageRoute="/assets/team/tomi.jpg"
+          fact1="MBA"
+          fact1col="Harvard Business School"
+          fact2="Experience"
+          fact2col="Tech, Operations, Finance, Marketing"
+          fact3='Former Manager'
+          fact3col='Boston Consulting Group'
+        />
       </div>
     </div>
   );
