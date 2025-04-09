@@ -16,7 +16,7 @@ export default function Home() {
       <Separator orientation="horizontal"/>
       <StocksSection />
       <BenefitsSection/>
-      <GrantSection />
+      {/* <GrantSection /> */}
       {/* <PartnersSection/> */}
       <div className="relative">
         <RocketSection />
