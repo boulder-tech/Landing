@@ -18,7 +18,7 @@ export default function Home() {
       <StocksSection />
       <BenefitsSection/>
       <InvesorsSection/>
-      <GrantSection />
+      {/* <GrantSection /> */}
       {/* <PartnersSection/> */}
       <div className="relative">
         <RocketSection />

@@ -1,20 +1,58 @@
 import Image, { StaticImageData } from "next/image";
+import Link from 'next/link'
 
 
 interface Props {
     logo: StaticImageData;
     name: string;
-    individuals?:string;
-  }
+    color: string;
+    url?: string;
+}
 
-const InvestorCard = ({logo, name, individuals}:Props) => {
+const individualinvestors = [
+    "Ariel Barmat",
+    "Christian Vilate",
+    "David Garcia",
+    "Esteban Ordano",
+    "Facundo Ameal",
+    "Lyuben Belov",
+    "Mike Santos",
+    "Matías Woloski",   
+    "Martín Tellechea",
+    "Wenceslao Casares"
+];
+
+const cardClass = "flex flex-wrap justify-center items-center w-72 h-64 bg-[#0D0E1B] border-[#FAFBFF]/12 border-2 rounded-xl duration-150"
+
+const InvestorCard = ({logo, name, color, url}:Props) => {
+    
+    if (url){
+        return(
+
+            <Link href={url} target='_blank'className={`${color} ${cardClass}`}>
+                
+                <Image src={logo} alt={name} width={150}/>
+    
+            </Link>
+        )
+    }
+
     return(
 
-        <div className="flex flex-wrap justify-center items-center w-64 h-64 bg-[#0D0E1B] border-[#FAFBFF]/12 border-2 rounded-xl">
+        <div className={`${color} ${cardClass} p-2 group relative overflow-hidden`}>
             
-            <Image src={logo} alt={name}/>
+            <h3 className="text-center font-atyp-display text-3xl font-light leading-tight absolute top-[5.5rem] group-hover:top-[-80px] transition-all duration-300 ease-in-out">Individual<br />Investors</h3>
+
+            <div className="grid grid-cols-2 gap-y-2 left-4 absolute bottom-[-180px] group-hover:bottom-[40px] transition-all duration-300 ease-in-out">
+
+                {individualinvestors.map((investor)=>(
+                    <p className="">{investor}</p>
+                ))}
+
+            </div>
 
         </div>
     )
+
 };
 export default InvestorCard;
