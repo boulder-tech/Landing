@@ -12,7 +12,7 @@ interface Props {
     fact2col?: string,
     fact3?: string,
     fact3col?: string,
-  }
+}
 
 const PersonCard = ({name, role, imageRoute, fact1, fact2, fact3, fact1col, fact2col, fact3col}: Props) => {   
     return (
