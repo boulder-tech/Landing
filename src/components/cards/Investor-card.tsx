@@ -45,8 +45,8 @@ const InvestorCard = ({logo, name, color, url}:Props) => {
 
             <div className="grid grid-cols-2 gap-y-2 left-4 absolute bottom-[-180px] group-hover:bottom-[40px] transition-all duration-300 ease-in-out">
 
-                {individualinvestors.map((investor)=>(
-                    <p className="">{investor}</p>
+                {individualinvestors.map((investor, i)=>(
+                    <p key={i}>{investor}</p>
                 ))}
 
             </div>
