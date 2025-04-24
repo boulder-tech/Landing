@@ -12,19 +12,21 @@ const TrustSection = () => {
                     Every token is backed 1:1 by real-world assets (RWA), with institutional-grade processes and full on-chain verification — ensuring security, compliance, and long-term stability.
                 </p>
             </div>
-            <div className='flex gap-x-4' >
+            <div className='flex gap-x-32' >
                 <TrustCard
                     imageurl="/../assets/POF.png"
                     title='Institutional-Grade Security'
                     subtitle='Our platform is built on the most secure blockchain technology, ensuring your assets are safe and sound.'
-                    cta='Verify 1:1 backing'    
+                    cta='Verify 1:1 backing'   
+                    url='' 
                 />
                 <TrustCard
                     imageurl="/../assets/EY.png"
                     title='Transparent Processes'
-                    subtitle='We provide full transparency into our processes, so you can trust that your assets are being managed responsibly.'
+                    subtitle='We provide full transparency into our processes, you can trust your assets are being managed responsibly.'
                     cta='Check docs'
-                    // cardClass='gap-y-16' PORQUE NO FUNCIONA ESTOOOOOOOOOOOOOOOOOOOO
+                    cardClass='gap-y-[16px]'
+                    url=''
                 />
             </div>
         </section>
