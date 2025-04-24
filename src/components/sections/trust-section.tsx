@@ -3,7 +3,8 @@ import TrustCard from '../cards/trust-card';
 
 const TrustSection = () => {
     return (
-        <section className='flex flex-col items-center py-16 bg-gray-300 gap-y-16'>
+        <section className='flex flex-col items-center p-16 gap-y-32 pt-32 relative'>
+            <span className="bg-[#245BFF]/50 w-[500px] h-96 absolute top-96 right-[-200px] blur-[240px] z-10 pointer-events-none"></span>
             <div className='flex flex-col items-center gap-y-4'>
                 <h2 className='font-atyp-display sm:text-6xl text-[35px] font-light text-center'>
                     Built for Trust and Transparency
@@ -12,7 +13,7 @@ const TrustSection = () => {
                     Every token is backed 1:1 by real-world assets (RWA), with institutional-grade processes and full on-chain verification — ensuring security, compliance, and long-term stability.
                 </p>
             </div>
-            <div className='flex gap-x-32' >
+            <div className='flex flex-wrap justify-center gap-32' >
                 <TrustCard
                     imageurl="/../assets/POF.png"
                     title='Institutional-Grade Security'

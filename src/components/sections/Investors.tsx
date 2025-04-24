@@ -8,8 +8,8 @@ const InvesorsSection = () => {
     return(
         <section className="flex flex-wrap justify-center w-29 sm:px-16 px-4 gap-14 pb-20 xl:pb-28 2xl:pb-32 pt-32 relative">
 
-            <span className="bg-[#245BFF] blur-3xl text-color-[#245BFF]">.</span>
-            <span className="bg-[#245BFF]/50 w-[500px] h-96 absolute top-0 right-32 blur-[128px] z-10 pointer-events-none"></span>
+            <span className="bg-[#245BFF]/50 w-[500px] h-96 absolute top-0 right-[-300px] blur-[240px] z-10 pointer-events-none"></span>
+            <span className="bg-[#245BFF]/50 w-[500px] h-96 absolute top-80 right-[1200px] blur-[240px] z-10 pointer-events-none"></span>
             
             <div className="flex flex-col xl:justify-left justify-center gap-12">
 

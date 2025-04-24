@@ -17,7 +17,8 @@ const TrustCard = ({imageurl, title, subtitle, cta, cardClass, url} : Props) => 
             <div className='flex flex-col items-center gap-y-4 mt-8 w-[400px]'>
                 <h3 className='font-atyp-display font-semibold text-2xl'>{title}</h3>
                 <p className='text-[#9399A6] text-center'>{subtitle}</p>
-                <Link href={url} className= "text-blue-500">{cta}</Link>
+                {/* <Link href={url} className= "text-blue-500 underline">{cta} ↗</Link> */}
+
             </div>
         </div>  
     );
