@@ -43,6 +43,12 @@ const Header = () => {
               </Link>
               <Link
                 className="cursor-pointer font-medium hover:opacity-50 transition-all duration-200"
+                href={"/por"}
+              >
+                Proof of Reserves
+              </Link>
+              <Link
+                className="cursor-pointer font-medium hover:opacity-50 transition-all duration-200"
                 href={"https://docs.bouldertech.fi"}
                 target="_blank"
               >
@@ -93,6 +99,14 @@ const Header = () => {
         </Link>
         <Link
           className="cursor-pointer text-3xl font-medium hover:opacity-50 transition-all duration-200"
+          href={"/por"}
+          target="_blank"
+          onClick={toggleMenu}
+        >
+          Proof of Reserves
+        </Link>
+        <Link
+          className="cursor-pointer text-3xl font-medium hover:opacity-50 transition-all duration-200"
           href={"https://docs.bouldertech.fi"}
           target="_blank"
           onClick={toggleMenu}
@@ -104,7 +118,13 @@ const Header = () => {
           href={"https://app.bouldertech.fi/"}
           onClick={toggleMenu}
         >
-          Launch App
+          <Link
+            className="cursor-pointer text-3xl font-medium hover:opacity-50 transition-all duration-200"
+            href={"/pof"}
+            onClick={toggleMenu}
+          >
+          </Link>
+            Launch App
         </Link>
       </div>
     </>
