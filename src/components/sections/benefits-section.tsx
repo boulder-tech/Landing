@@ -13,7 +13,7 @@ const BenefitsSection = () => {
           Why BoulderTech?
         </h2>
         <p className="text-foreground-leading text-base">
-        On-chain investments. Secure by design, Compliant by default
+        On-chain investments. Secure by design. Compliant by default
         </p>
       </div>
       <div className="px-8 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 w-fit items-center place-items-center justify-center justify-items-center">
