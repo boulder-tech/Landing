@@ -1,6 +1,6 @@
-import RealWorldIcon from '../../public/assets/real-world.svg';
-import TransparentIcon from '../../public/assets/transparent.svg';
-import ProfessionalIcon from '../../public/assets/professional.svg';
+import RealWorldIcon from '../../public/assets/icons/real-world.svg';
+import TransparentIcon from '../../public/assets/icons/transparent.svg';
+import ProfessionalIcon from '../../public/assets/icons/professional.svg';
 
 const benefitData = [
   {

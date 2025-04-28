@@ -1,13 +1,13 @@
 import React from 'react';
-import PofCard from './cards/pof-card';
+import PorCard from './cards/por-card';
 
 const PorTokenList= ({}) => {
     return (
-        <div>
-            <PofCard
-            token={"USDC"}
+        <div className='flex flex-col items-center justify-center'>
+            <PorCard
+            token={"IB01.bt"}
             ratio='100%'
-            imageRoute={"/assets/Pof.png"}
+            imageRoute={"/assets/tokens/ib01.png"}
             /> 
         </div>  
     );
