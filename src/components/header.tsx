@@ -17,12 +17,12 @@ const Header = () => {
   return (
     <>
       <header className="w-full fixed h-[65px] top-0 z-50 py-3 bg-[rgba(1, 3, 18, 0.01)] border-b border-grey-200 backdrop-blur-lg">
-        <div className="flex items-center justify-between 2xl:px-[300px] lg:px-[150px] md:px-[75px] px-[20px]">
+        <div className="flex items-center justify-between 2xl:px-[300px] lg:px-[150px] md:px-[30px] px-[20px]">
           <div className="flex gap-4 items-center justify-center divide-border-grey-200 divide-x-[1px]">
             <Link href={"/"}>
               <Image src={Imagotype} alt="Logo BoulderTech" width={120}></Image>
             </Link>
-            <div className="pl-4 text-boulder-text sm:flex hidden text-sm gap-4 font-normal -tracking-[0.28px]">
+            <div className="pl-4 text-boulder-text md:flex hidden text-sm gap-4 font-normal -tracking-[0.28px]">
               <Link
                 className="cursor-pointer font-medium hover:opacity-50 transition-all duration-200"
                 href={"/about"}
@@ -56,7 +56,7 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          <GhostButton iconBtn onClick={toggleMenu} classes="sm:hidden">
+          <GhostButton iconBtn onClick={toggleMenu} classes="md:hidden">
             <Image
               src={Hamburger}
               alt="Hamburger menu"
@@ -65,7 +65,7 @@ const Header = () => {
               className="w-4 h-4 absolute"
             />
           </GhostButton>
-          <Link href={"https://app.bouldertech.fi/"} className="hidden sm:block">
+          <Link href={"https://app.bouldertech.fi/"} className="hidden md:block">
             <GhostButton>Launch App</GhostButton>
           </Link>
         </div>
