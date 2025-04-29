@@ -1,9 +1,7 @@
-"use client";
 import React from 'react';
 import Image from 'next/image';
 import SafeBox from "../../public/assets/PoF.png";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue, SelectGroup } from "@radix-ui/react-select";
-
+import AuditTimeSelect from './buttons/audit-time-select';
 const PofHero = () => {
     return (
         <section className='flex flex-col gap-y-24'>
@@ -20,30 +18,9 @@ const PofHero = () => {
                 <div className='flex flex-row items-center justify-center gap-4'>
                     <p>Audit time</p>
                     <div className=''>
-                        <Select>
-                            <SelectTrigger className="w-[220px] cursor-pointer border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <SelectValue placeholder="Selecciona una opción" />
-                            </SelectTrigger>
-                            <SelectContent className="w-[220px] bg-background border rounded-md shadow-md">
-                                <SelectGroup>
-                                    <SelectItem 
-                                    value="2025-03-27T04:00:00Z"
-                                    className="cursor-pointer hover:bg-accent hover:text-accent-foreground px-3 py-2 text-sm rounded-md"
-                                    >2025-03-27 04:00 UTC
-                                    </SelectItem>
-                                    <SelectItem 
-                                    value="2025-03-28T04:00:00Z"
-                                    className="cursor-pointer hover:bg-accent hover:text-accent-foreground px-3 py-2 text-sm rounded-md"
-                                    >2025-03-28 05:00 UTC
-                                    </SelectItem>
-                                    <SelectItem 
-                                    value="2025-03-29T04:00:00Z"
-                                    className="cursor-pointer hover:bg-accent hover:text-accent-foreground px-3 py-2 text-sm rounded-md"
-                                    >2025-03-29 06:00 UTC
-                                    </SelectItem>
-                                </SelectGroup>    
-                            </SelectContent>
-                        </Select>
+                        <AuditTimeSelect
+                            
+                        />
                     </div>                      
                 </div>
             </div>
