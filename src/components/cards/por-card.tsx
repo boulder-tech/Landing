@@ -30,7 +30,7 @@ const PorCard = ({token, imageRoute}: Props) => {
                 <div className="flex flex-col justify-between gap-y-3">
                     <div className="flex flex-row items-center justify-between gap-x-6">
                         <div>
-                            <h1 className="text-foreground-heading 2xl:text-[44px] sm:text-[34px] text-[40px] font-atyp-display font-medium leading-[120%]">{token}</h1>
+                            <h1 className="text-foreground-heading 2xl:text-[38px] sm:text-[34px] text-[40px] font-atyp-display font-medium leading-[120%]">{token}</h1>
                             <h3 className="text-foreground-leading text-md font-medium">Reserve ratio</h3>
                         </div>
                         <Image src={imageRoute} alt="Token image" width={80} height={80}></Image>
