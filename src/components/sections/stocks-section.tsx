@@ -13,8 +13,15 @@ const StocksSection = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center sm:px-16 px-4 gap-14 pb-20 xl:pb-28 2xl:pb-32 pt-32 relative">
         <div className='flex flex-col xl:gap-6 gap-4 justify-center items-center w-full text-center z-10'>
-            <h1 className='font-atyp-display text-3xl 2xl:text-5xl font-light leading-tight'>Bringing Wall Street <span className='whitespace-nowrap'>On-Chain</span></h1>
-            <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"From stocks, to bonds, to beyond - we tokenize assets from global financial markets, offering a seamless and flexible way to diversify your portfolio. All tokens are backed 1:1 by their underlying assets, ensuring security, transparency, and compliance"}</p>
+            <h1 className='font-atyp-display text-3xl 2xl:text-5xl font-light leading-tight'>Curated access to <span className='whitespace-nowrap bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent'>pre-IPO</span> opportunities</h1>
+            <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"Tokenization sets the foundation for a new era of private investing:"}</p>
+            <div className='flex flex-row gap-x-9 items-center'>
+              <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"Frictionless"}</p>
+              <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"Off-market opportunities"}</p>
+              <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"Fully compliant"}</p>
+            </div>
+
+
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center justify-center z-10'>
             <TokenCard name='Top corporate VC' icon={Trophy} url='https://app.bouldertech.fi/sp500'></TokenCard>
