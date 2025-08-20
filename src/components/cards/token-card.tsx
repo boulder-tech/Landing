@@ -4,31 +4,29 @@ import React from 'react'
 
 interface Props {
     className?: string,
-    asset: string,
-    ticker: string,
+    name: string,
+    description?: string,
     icon: StaticImageData,
     url: string,
-    bgColor: `bg-[#${string}]`
-    isLight?: boolean
+    isComingSoon?: boolean
 }
 
-const TokenCard = ({className, asset, ticker, icon, url, bgColor, isLight}: Props) => {
+const TokenCard = ({className, name, description, icon, url, isComingSoon}: Props) => {
     return (
-        <Link href={url} target='_blank' className={`flex items-center justify-center h-20 sm:h-40 w-full sm:w-40 rounded-lg group overflow-hidden relative cursor-pointer ${bgColor} ${!isLight ? 'text-text-white' : 'text-text-black'} ${className}`}>
-            <div className='flex flex-col items-center gap-2 group-hover:opacity-0 duration-100'>
-                <div className='flex gap-2 items-center justify-center'>
-                    <Image src={icon} width={25} height={25} alt={asset + " icon"} className='md:w-fit w-8'></Image>
-                    <p className='md:text-2xl font-medium text-lg'>{asset}</p>
-                </div>
-                <div className='sm:grid flex sm:gap-0 gap-1 text-center text-sm' >
-                    <p>Tokenized as </p>
-                    <p>{ticker}</p>
-                </div>
-                
+        <Link href={url} target='_blank' className={`flex items-top pt-12 justify-center md:h-60 md:w-60 sm:h-40 sm:w-40 rounded-lg group overflow-visible relative cursor-pointer bg-[#FFFF]`}>
+            <div className={`flex flex-col items-center ${!isComingSoon ? 'visible' : 'group-hover:opacity-0 duration-100'}`}>
+                <div className='flex flex-col gap-2 items-center justify-center text-black'>
+                    <Image src={icon} width={40} height={40} alt={name + " icon"} className='md:w-8 w-8'></Image>
+                    <p className='md:text-2xl font-medium text-lg text-center'>{name}</p>
+                    <p className='text-center w-52'>{description}</p>
+                </div>  
             </div>
 
-            <div className='absolute -bottom-5 sm:group-hover:bottom-[3.75rem] group-hover:bottom-7 transition-all duration-300 ease-in-out'>
-                <p className='font-medium'>More Info ↗</p>
+            <div className={`absolute -bottom-5 sm:group-hover:bottom-[6rem] group-hover:bottom-7 transition-all duration-300 ease-in-out ${!isComingSoon ? 'invisible' : 'visible'}`}>
+                <p className='font-medium text-black'>Explore deal ↗</p>
+            </div>
+            <div className={`absolute top-[-16px] left-40 bg-[#E8EEFF] border-2 border-[#B3C4FF] whitespace-nowrap rotate-12 rounded-full p-1 ${!isComingSoon ? 'invisible' : 'visible'}`}>
+                <p className='text-sm text-[#0C32CC]'>Coming soon</p>
             </div>
         </Link>
     )

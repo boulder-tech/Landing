@@ -1,11 +1,12 @@
 import React from 'react'
 import TokenCard from '../cards/token-card';
-import cspxIcon from "../../../public/assets/tokens/cspx.svg";
-import ib01Icon from "../../../public/assets/tokens/ib01.svg";
-import cndxIcon from "../../../public/assets/tokens/cndx.svg";
-import irsIcon from "../../../public/assets/tokens/irs.svg";
-import gd30dIcon from "../../../public/assets/tokens/gd30d.svg";
 import gridEffect from "../../../public/assets/gridEffect.png";
+import BCKCapital from "../../../public/icons/BCKcapital-logo.png";
+import Trophy from "../../../public/icons/trophy-01.png";
+import Clapperboard from "../../../public/icons/clapperboard.png";
+import CoinsHand from "../../../public/icons/coins-hand.png";
+import Home03 from "../../../public/icons/home-03.png";
+import Chart from "../../../public/icons/chart-breakout-circle.png";
 import Image from 'next/image';
 
 const StocksSection = () => {
@@ -15,12 +16,13 @@ const StocksSection = () => {
             <h1 className='font-atyp-display text-3xl 2xl:text-5xl font-light leading-tight'>Bringing Wall Street <span className='whitespace-nowrap'>On-Chain</span></h1>
             <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"From stocks, to bonds, to beyond - we tokenize assets from global financial markets, offering a seamless and flexible way to diversify your portfolio. All tokens are backed 1:1 by their underlying assets, ensuring security, transparency, and compliance"}</p>
         </div>
-        <div className='flex flex-wrap gap-3 sm:gap-5 items-center justify-center z-10'>
-            <TokenCard asset='S&P 500' ticker='CSPX.bt' icon={cspxIcon} url='https://app.bouldertech.fi/sp500' bgColor='bg-[#C42933]'></TokenCard>
-            <TokenCard asset='NASDAQ' ticker='CNDX.bt' icon={cndxIcon} url='https://app.bouldertech.fi/nsdq' bgColor='bg-[#193A8A]'></TokenCard>
-            <TokenCard asset='USA T-Bills' ticker='IB01.bt' icon={ib01Icon} url='https://app.bouldertech.fi/ib01' bgColor='bg-[#FFFFFF]' isLight></TokenCard>
-            <TokenCard asset='IRSA' ticker='IRS.bt' icon={irsIcon} url='https://app.bouldertech.fi/irsa' bgColor='bg-[#407D70]'></TokenCard>
-            <TokenCard asset='GD30D' ticker='GD30D.bt' icon={gd30dIcon} url='https://app.bouldertech.fi/gd30d' bgColor='bg-[#5298E0]'></TokenCard>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center justify-center z-10'>
+            <TokenCard name='Top corporate VC' icon={Trophy} url='https://app.bouldertech.fi/sp500'></TokenCard>
+            <TokenCard name='Fast Growth Consumer Brand' icon={Chart} url='https://app.bouldertech.fi/nsdq'></TokenCard>
+            <TokenCard name='BCK Capital' icon={BCKCapital} url='https://app.bouldertech.fi/gd30d'></TokenCard>
+            <TokenCard name='Enterteinment Holding' description='Back the growth of media and entertainment ventures' icon={Clapperboard} url='https://app.bouldertech.fi/irsa' isComingSoon></TokenCard>
+            <TokenCard name='Fintech Services' description='Invest in innovative financial technology companies' icon={CoinsHand} url='https://app.bouldertech.fi/gd30d' isComingSoon></TokenCard>
+            <TokenCard name='Real Estate Developer' description='Tokenized real estate projects offering stable, long-term returns' icon={Home03} url='https://app.bouldertech.fi/ib01' isComingSoon></TokenCard>
         </div>
         <div className="hidden md:flex absolute w-full bottom-0 z-0">
           <Image src={gridEffect} alt='' aria-hidden className="object-cover pointer-events-none"></Image>
