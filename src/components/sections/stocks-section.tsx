@@ -1,19 +1,17 @@
 import React from 'react'
 import TokenCard from '../cards/token-card';
-import gridEffect from "../../../public/assets/gridEffect.png";
 import BCKCapital from "../../../public/icons/BCKcapital-logo.png";
 import Trophy from "../../../public/icons/trophy-01.png";
 import Clapperboard from "../../../public/icons/clapperboard.png";
 import CoinsHand from "../../../public/icons/coins-hand.png";
 import Home03 from "../../../public/icons/home-03.png";
 import Chart from "../../../public/icons/chart-breakout-circle.png";
-import Image from 'next/image';
 
 const StocksSection = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center sm:px-16 px-4 gap-14 pb-20 xl:pb-28 2xl:pb-32 pt-32 relative">
         <div className='flex flex-col xl:gap-6 gap-4 justify-center items-center w-full text-center z-10'>
-            <h1 className='font-atyp-display text-3xl 2xl:text-5xl font-light leading-tight text-black'>Curated access to <span className='whitespace-nowrap bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent'>pre-IPO</span> opportunities</h1>
+            <h1 className='font-atyp-display text-3xl 2xl:text-5xl font-light leading-tight text-black'>Curated access to <span className='whitespace-nowrap bg-gradient-to-r from-[#00B2FF] to-[#245BFF] bg-clip-text text-transparent'>pre-IPO</span> opportunities</h1>
             <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"Tokenization sets the foundation for a new era of private investing:"}</p>
             <div className='flex flex-row gap-x-9 items-center'>
               <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"Frictionless"}</p>

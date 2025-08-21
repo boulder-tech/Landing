@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Imagotype from "../../public/assets/imagotype.svg";
+import Imagotype from "../../public/icons/Logonegro.png";
 import GhostButton from "./buttons/ghost-button";
 import Image from "next/image";
 import clsx from "clsx";
@@ -20,9 +20,9 @@ const Header = () => {
         <div className="flex items-center justify-between 2xl:px-[300px] lg:px-[150px] md:px-[75px] px-[20px]">
           <div className="flex gap-4 items-center justify-center divide-border-grey-200 divide-x-[1px]">
             <Link href={"/"}>
-              <Image src={Imagotype} alt="Logo BoulderTech" width={120}></Image>
+              <Image src={Imagotype} alt="Logo BoulderTech" width={32} height={32}></Image>
             </Link>
-            <div className="pl-4 text-boulder-text sm:flex hidden text-sm gap-4 font-normal -tracking-[0.28px]">
+            <div className="pl-4 text-black sm:flex hidden text-sm gap-4 font-normal -tracking-[0.28px]">
               <Link
                 className="cursor-pointer font-medium hover:opacity-50 transition-all duration-200"
                 href={"/about"}
@@ -60,7 +60,7 @@ const Header = () => {
             />
           </GhostButton>
           <Link href={"https://app.bouldertech.fi/"} className="hidden sm:block">
-            <GhostButton>Launch App</GhostButton>
+            <GhostButton>Log in / Sign Up</GhostButton>
           </Link>
         </div>
       </header>
