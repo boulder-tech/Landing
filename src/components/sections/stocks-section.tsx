@@ -13,7 +13,7 @@ const StocksSection = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center sm:px-16 px-4 gap-14 pb-20 xl:pb-28 2xl:pb-32 pt-32 relative">
         <div className='flex flex-col xl:gap-6 gap-4 justify-center items-center w-full text-center z-10'>
-            <h1 className='font-atyp-display text-3xl 2xl:text-5xl font-light leading-tight'>Curated access to <span className='whitespace-nowrap bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent'>pre-IPO</span> opportunities</h1>
+            <h1 className='font-atyp-display text-3xl 2xl:text-5xl font-light leading-tight text-black'>Curated access to <span className='whitespace-nowrap bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent'>pre-IPO</span> opportunities</h1>
             <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"Tokenization sets the foundation for a new era of private investing:"}</p>
             <div className='flex flex-row gap-x-9 items-center'>
               <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"Frictionless"}</p>
@@ -30,9 +30,6 @@ const StocksSection = () => {
             <TokenCard name='Enterteinment Holding' description='Back the growth of media and entertainment ventures' icon={Clapperboard} url='https://app.bouldertech.fi/irsa' isComingSoon></TokenCard>
             <TokenCard name='Fintech Services' description='Invest in innovative financial technology companies' icon={CoinsHand} url='https://app.bouldertech.fi/gd30d' isComingSoon></TokenCard>
             <TokenCard name='Real Estate Developer' description='Tokenized real estate projects offering stable, long-term returns' icon={Home03} url='https://app.bouldertech.fi/ib01' isComingSoon></TokenCard>
-        </div>
-        <div className="hidden md:flex absolute w-full bottom-0 z-0">
-          <Image src={gridEffect} alt='' aria-hidden className="object-cover pointer-events-none"></Image>
         </div>
         <div className='absolute w-full bottom-0 z-0 overflow-hidden h-full'>
           <span
