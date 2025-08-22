@@ -12,7 +12,7 @@ interface Props {
 const individualinvestors = [
     "Ariel Barmat",
     "Christian Vilate",
-    "David Garcia",
+    "David García",
     "Esteban Ordano",
     "Facundo Ameal",
     "Lyuben Belov",
@@ -22,7 +22,7 @@ const individualinvestors = [
     "Wenceslao Casares"
 ];
 
-const cardClass = "flex flex-wrap justify-center items-center w-72 h-64 bg-[#0D0E1B] border-[#FAFBFF]/12 border-2 rounded-xl duration-150"
+const cardClass = "flex flex-wrap justify-center items-center w-72 h-64 bg-[#FFFFFF] border-[#FAFBFF]/12 border-2 rounded-xl duration-150"
 
 const InvestorCard = ({logo, name, color, url}:Props) => {
     
@@ -46,7 +46,7 @@ const InvestorCard = ({logo, name, color, url}:Props) => {
             <div className="grid grid-cols-2 gap-y-2 left-4 absolute bottom-[-180px] group-hover:bottom-[40px] transition-all duration-300 ease-in-out">
 
                 {individualinvestors.map((investor, i)=>(
-                    <p key={i}>{investor}</p>
+                    <p key={i} className="text-white">{investor}</p>
                 ))}
 
             </div>
