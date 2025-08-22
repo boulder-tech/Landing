@@ -8,6 +8,7 @@ import Separator from "@/components/separator";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./globals.css";
+import StepperSection from "@/components/sections/stepper-section";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
       <Separator orientation="horizontal"/>
       <StocksSection />
+      <StepperSection/>
       <BenefitsSection/>
       <InvesorsSection/>
       {/* <GrantSection /> */}
