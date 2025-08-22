@@ -17,7 +17,7 @@ export default function Home() {
       <Separator orientation="horizontal"/>
       <StocksSection />
       <StepperSection/>
-      <BenefitsSection/>
+      {/* <BenefitsSection/> */}
       <InvesorsSection/>
       {/* <GrantSection /> */}
       {/* <PartnersSection/> */}

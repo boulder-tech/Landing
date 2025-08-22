@@ -17,9 +17,7 @@ const StocksSection = () => {
               <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"Frictionless"}</p>
               <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"Off-market opportunities"}</p>
               <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"Fully compliant"}</p>
-            </div>
-
-
+        </div>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center justify-center z-10'>
             <TokenCard name='Top corporate VC' icon={Trophy} url='https://app.bouldertech.fi/sp500'></TokenCard>
