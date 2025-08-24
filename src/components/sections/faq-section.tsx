@@ -14,9 +14,7 @@ const FaqSection = () => {
             <h2 className="sr-only">RWA Tokenization</h2>
             <FaqItem question="What is RWA asset tokenization?" defaultOpen>
               <p>
-                Asset tokenization is the process of converting ownership rights in real-world assets (RWA)—such as equity,
-                funds, or private companies—into digital tokens on a blockchain. This allows for secure, traceable, and more
-                efficient investing.
+                Asset tokenization is the process of converting ownership rights in real-world assets (RWA)—such as equity, funds, or private companies—into digital tokens on a blockchain. This allows for secure, traceable, and more efficient investing.
               </p>
             </FaqItem>
           </div>
@@ -25,8 +23,7 @@ const FaqSection = () => {
           <div className="px-4 md:px-6">
             <FaqItem question="Who can invest?">
               <p>
-                Accredited and eligible investors according to the regulations of their jurisdiction. We perform KYC/AML and
-                compliance checks before enabling investing access.
+                Only accredited investors can participate. Each investor goes through a simple verification process to confirm eligibility in accordance with local regulations.
               </p>
             </FaqItem>
           </div>
@@ -35,8 +32,7 @@ const FaqSection = () => {
           <div className="px-4 md:px-6">
             <FaqItem question="How are deals selected?">
               <p>
-                Each opportunity goes through due‑diligence covering team, financials, legal structure, and token mechanics.
-                Only deals that meet our risk and governance standards are listed.
+                All opportunities listed are vetted by experienced investors and operators. We run a due diligence process to ensure alignment with our investment standards before tokenization.
               </p>
             </FaqItem>
           </div>
@@ -45,8 +41,7 @@ const FaqSection = () => {
           <div className="px-4 md:px-6">
             <FaqItem question="What information do I get as an investor?">
               <p>
-                You’ll receive offering documents, regular updates, NAV/metrics when applicable, and on‑chain transparency of
-                token supply and movements.
+                You receive access to deal documentation, legal structure, token terms, and regular investor updates—including quarterly performance reports where applicable.
               </p>
             </FaqItem>
           </div>
@@ -55,8 +50,7 @@ const FaqSection = () => {
           <div className="px-4 md:px-6">
             <FaqItem question="I’m a founder — how can I raise with BoulderTech?">
               <p>
-                Tell us about your company and funding needs. We’ll assess fit, structure the vehicle, and guide you through
-                tokenization, compliance, and listing.
+                Submit your application through our platform. We review alignment with our investor groups and perform due diligence before structuring and listing the opportunity.
               </p>
             </FaqItem>
           </div>
