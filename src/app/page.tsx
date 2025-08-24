@@ -5,6 +5,7 @@ import OurApproachSection from "@/components/sections/our-approach-section";
 import RocketSection from "@/components/sections/rocket-section";
 import StocksSection from "@/components/sections/stocks-section";
 import InvesorsSection from "@/components/sections/Investors";
+import FaqSection from "@/components/sections/faq-section";
 import Separator from "@/components/separator";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -30,6 +31,7 @@ export default function Home() {
         position="bottom-right" 
         toastStyle={{ backgroundColor: "#010312", color: 'white' }}
       />
+      <FaqSection/>
     </>
   );
 }
