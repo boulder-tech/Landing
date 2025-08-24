@@ -1,6 +1,7 @@
 import HeroSection from "@/components/sections/hero-section";
 import BenefitsSection from "@/components/sections/benefits-section";
 import FinalCtaSection from "@/components/sections/final-cta-section";
+import OurApproachSection from "@/components/sections/our-approach-section";
 import RocketSection from "@/components/sections/rocket-section";
 import StocksSection from "@/components/sections/stocks-section";
 import InvesorsSection from "@/components/sections/Investors";
@@ -17,14 +18,14 @@ export default function Home() {
       <Separator orientation="horizontal"/>
       <StocksSection />
       <StepperSection/>
-      {/* <BenefitsSection/> */}
+      <OurApproachSection/> 
       <InvesorsSection/>
       {/* <GrantSection /> */}
       {/* <PartnersSection/> */}
-      <div className="relative">
+      {/* <div className="relative">
         <RocketSection />
-      </div>
-      <FinalCtaSection/>
+      </div> */}
+      {/* <FinalCtaSection/> */}
       <ToastContainer 
         position="bottom-right" 
         toastStyle={{ backgroundColor: "#010312", color: 'white' }}
