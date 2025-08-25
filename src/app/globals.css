@@ -26,3 +26,23 @@
 html {
   color-scheme: dark;
 }
+
+.main-padding {
+  padding-right: 9rem;
+  padding-left: 9rem;
+}
+
+/* Reduce padding on small screens */
+@media (max-width: 1280px) {
+  .main-padding {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-padding {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}

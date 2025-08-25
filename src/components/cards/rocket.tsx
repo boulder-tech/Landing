@@ -7,7 +7,7 @@ import { useScroll, animated, useSpring } from '@react-spring/web';
 const Rocket = () => {
     const { scrollYProgress } = useScroll();
     const { transform } = useSpring({
-        transform: scrollYProgress.to(y => `translate(${y * 600 - 400}px, ${y * -1200 + 850}px)`),
+        transform: scrollYProgress.to(y => `translate(${y * 600 - 400}px, ${y * -1400 + 850}px)`),
     });
     
     return (

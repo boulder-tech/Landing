@@ -3,6 +3,9 @@ import EarthModel from "../earth";
 import HeroImage from "../../../public/icons/heroImage.png";
 import { BrandLink } from "../buttons/brand-button";
 import Hero from "./blog/Hero";
+import dots from '../../../public/assets/landing-dots.png'
+import circle from '../../../public/assets/landing-circle.png'
+
 
 const HeroSection = () => {
   return (
@@ -30,6 +33,9 @@ const HeroSection = () => {
           Explore active deals →
         </BrandLink>
       </div>
+      <Image src={dots} alt="decoration" className='absolute bottom-[-60px] right-0'></Image>
+      <Image src={dots} alt="decoration" className='absolute bottom-[-300px] left-0 scale-x-[-1]'></Image>
+      <Image src={circle} alt="decoration" className='absolute top-[-250px] left-28 rotate-45'></Image>
     </section>
   );
 };
