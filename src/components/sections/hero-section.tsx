@@ -27,7 +27,7 @@ const HeroSection = () => {
         </BrandLink>
       </div>
       <Image src={dots} alt="decoration" className='absolute bottom-[-60px] right-0'></Image>
-      <Image src={dots} alt="decoration" className='absolute bottom-[-300px] left-0 scale-x-[-1]'></Image>
+      <Image src={dots} alt="decoration" className='absolute bottom-[-300px] left-0 scale-x-[-1] invisible sm:visible'></Image>
       <Image src={circle} alt="decoration" className='absolute top-[-250px] left-28 rotate-45'></Image>
     </section>
   );
