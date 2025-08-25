@@ -37,7 +37,8 @@ const StocksSection = () => {
             />
         </div>
         <Image src={circle} alt="decoration" className='absolute top-0 left-0'></Image>
-
+        <Image src={dots} alt="decoration" className='absolute bottom-[-60px] right-0'></Image>
+        <Image src={dots} alt="decoration" className='absolute bottom-[-300px] left-0 scale-x-[-1]'></Image>
     </section>
   )
 }
