@@ -12,11 +12,11 @@ interface Props {
 
 const TokenCard = ({name, description, icon, url, isComingSoon}: Props) => {
     return (
-        <Link href={url} target='_blank' className={`flex items-top pt-12 h-56 p-4 justify-start sm:h-60 sm:w-60 md:h-60 md:w-60 md:flex-col md:grid-cols-3 rounded-lg group ${!isComingSoon ? 'overflow-hidden' : 'overflow-vissible'} relative cursor-pointer bg-[#FFFF] hover:shadow-2xl hover:shadow-[#0C32CC]/20 duration-300 ease-in-out`}>
+        <Link href={url} target='_blank' className={`flex items-top pt-12 h-56 p-4 justify-start sm:h-60 sm:w-60 md:h-60 md:w-60 rounded-lg group ${!isComingSoon ? 'overflow-hidden' : 'overflow-vissible'} relative cursor-pointer bg-[#FFFF] hover:shadow-2xl hover:shadow-[#0C32CC]/20 duration-300 ease-in-out`}>
             <div className={`flex flex-col items-center ${!isComingSoon ? 'group-hover:opacity-0 duration-100' : 'visible'}`}>
                 <div className='flex flex-col gap-2 items-center justify-center text-black'>
                     <Image src={icon} width={40} height={40} alt={name + " icon"} className='md:w-8 w-8'></Image>
-                    <p className='md:text-2xl font-medium text-lg text-center w-24'>{name}</p>
+                    <p className='md:text-2xl md:w-56 font-medium text-lg text-center w-48'>{name}</p>
                     <p className='text-center w-52'>{description}</p>
                 </div>  
             </div>
