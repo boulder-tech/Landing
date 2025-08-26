@@ -23,7 +23,7 @@ const StepperSection = () => {
                     <p className='text-center'> Are you a founder or VC fund looking to raise capital?{" "} <Link href="/contact" className="underline"> Talk to the team ↗</Link></p>
                 </div>
             </div>
-            <Image src={dots} alt="decoration" className='absolute bottom-[-60px] right-0'></Image>
+            <Image src={dots} alt="decoration" className='absolute bottom-[-60px] right-0 invisible sm:visible'></Image>
             <Image src={dots} alt="decoration" className='absolute bottom-[-300px] left-0 scale-x-[-1]'></Image>
         </section>
             

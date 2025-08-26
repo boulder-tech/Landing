@@ -7,10 +7,10 @@ import LaserRed from "../../../public/assets/laser-focus-red.png"
 
 const ourApproach = () => {
   return (
-    <div className=" flex flex-col items-center justify-between mx-60 gap-16">
-      <h1 className="font-atyp-display text-3xl 2xl:text-5xl font-light leading-tight text-black w-[800px]">Our Approach</h1>
+    <div className="flex flex-col sm:items-center sm:justify-between gap-16 w-full main-padding">
+      <h1 className="font-atyp-display text-3xl 2xl:text-5xl font-light leading-tight text-black text-center">Our Approach</h1>
       <div className="flex flex-row justify-between w-full">
-        <div className="flex flex-col gap-4 relative">
+        <div className="flex flex-wrap gap-4 relative">
           <ApproachCard title="Top-tier investor network" description="Unmatched access to investors, angels, and leading operators across the region"/>
           <ApproachCard title="Frictionless" description="Flexible tickets and minimal bureaucracy"/>
           <ApproachCard title="Fully transparent" description="Built on legal certainty, blockchain-based transparency, and ongoing investor updates"/>
