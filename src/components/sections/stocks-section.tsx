@@ -23,12 +23,12 @@ const StocksSection = () => {
         </div>
         </div>
         <div className='flex flex-col sm:grid sm:grid-cols-2 gap-4 items-center justify-center z-10 md:flex-col md:grid-cols-3 w-full'>
-            <TokenCard name='Top corporate VC' icon={Trophy} url='https://app.bouldertech.fi/sp500'></TokenCard>
-            <TokenCard name='Fast Growth Consumer Brand' icon={Chart} url='https://app.bouldertech.fi/nsdq'></TokenCard>
-            <TokenCard name='BCK Capital' icon={BCKCapital} url='https://app.bouldertech.fi/gd30d'></TokenCard>
-            <TokenCard name='Enterteinment Holding' description='Back the growth of media and entertainment ventures' icon={Clapperboard} url='https://app.bouldertech.fi/irsa' isComingSoon></TokenCard>
-            <TokenCard name='Fintech Services' description='Invest in innovative financial technology companies' icon={CoinsHand} url='https://app.bouldertech.fi/gd30d' isComingSoon></TokenCard>
-            <TokenCard name='Real Estate Developer' description='Tokenized real estate projects offering stable, long-term returns' icon={Home03} url='https://app.bouldertech.fi/ib01' isComingSoon></TokenCard>
+            <TokenCard name='Top corporate VC' icon={Trophy} url=''></TokenCard>
+            <TokenCard name='Fast Growth Consumer Brand' icon={Chart} url=''></TokenCard>
+            <TokenCard name='BCK Capital' icon={BCKCapital} url=''></TokenCard>
+            <TokenCard name='Enterteinment Holding' description='Back the growth of media and entertainment ventures' icon={Clapperboard} url='' isComingSoon></TokenCard>
+            <TokenCard name='Fintech Services' description='Invest in innovative financial technology companies' icon={CoinsHand} url='' isComingSoon></TokenCard>
+            <TokenCard name='Real Estate Developer' description='Tokenized real estate projects offering stable, long-term returns' icon={Home03} url='' isComingSoon></TokenCard>
         </div>
         <div className='absolute w-full bottom-0 z-0 overflow-hidden h-full'>
           <span
