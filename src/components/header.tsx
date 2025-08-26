@@ -56,7 +56,7 @@ const Header = () => {
               alt="Hamburger menu"
               width={14}
               height={14}
-              className="w-4 h-4 absolute"
+              className="w-4 h-4 absolute invert hover:invert-0"
             />
           </GhostButton>
           <Link href={"https://app.bouldertech.fi/"} className="hidden sm:block">
