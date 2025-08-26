@@ -42,7 +42,7 @@ const Footer = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex gap-x-20'>
+                    <div className='flex sm:gap-x-20'>
                         <div className='flex flex-col items-start justify-start gap-3 h-full w-full sm:w-fit'>
                             <Label>External links</Label>
                             <div className='flex flex-col justify-between text-boulder-text-muted text-sm gap-2'>

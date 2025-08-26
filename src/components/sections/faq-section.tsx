@@ -4,7 +4,7 @@ const FaqSection = () => {
   return (
     <main className="flex w-full h-full main-padding">
       <section className="flex flex-col w- h-full w-full items-start mx-auto py-12 md:py-16">
-        <h1 className="font-atyp-display text-3xl 2xl:text-5xl font-light leading-tight text-black w-[800px] mb-6">Frequently Asked Questions</h1>
+        <h1 className="font-atyp-display text-3xl 2xl:text-5xl font-light leading-tight text-black sm:w-[800px] mb-6">Frequently Asked Questions</h1>
 
         <div className=" dark:border-neutral-800 bg-background">
           {/* 1 */}

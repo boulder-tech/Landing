@@ -21,7 +21,7 @@ const HeroSection = () => {
           </span>
           from Latam private markets
         </h1>
-        <h3 className="text-[#46505D] text-md font-light px-16 sm:px-0 sm:text-xl sm:font-medium z-10 w-[440px]">Unlocking Latam top investor networks - Preferential access to private companies and tokenized funds</h3>
+        <h3 className="text-[#101218] sm:text-[#46505D] text-md font-light px-16 sm:px-0 sm:text-xl sm:font-medium z-10 w-[440px]">Unlocking Latam top investor networks - Preferential access to private companies and tokenized funds</h3>
         <BrandLink href="https://app.bouldertech.fi/">
           Explore active deals →
         </BrandLink>
