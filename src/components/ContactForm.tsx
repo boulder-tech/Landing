@@ -59,7 +59,7 @@ const ContactForm = () => {
                 <input name="org" placeholder="Organization" type="text" className="w-full p-3 pl-5 h-fit rounded-lg border border-gray-100 bg-[#fafbff0a] backdrop:blur-[5px] placeholder:text-[#485069] shadow-md" />
             </div>
             <textarea name="message" placeholder="Message *" className="w-full resize-none  p-3 pl-5 h-32 flex items-start justify-start rounded-lg border border-gray-100 bg-[#fafbff0a] backdrop:blur-[5px] placeholder:text-[#485069] shadow-md"/>
-            <button type="submit" className="p-3 rounded-[0.625rem] bg-accent sm:w-[9.5rem] w-full">Submit</button>
+            <button type="submit" className="p-3 rounded-full bg-accent sm:w-[9.5rem] w-full text-white">Submit</button>
         </form>
     );
 }

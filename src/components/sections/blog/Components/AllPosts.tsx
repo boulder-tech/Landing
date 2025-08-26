@@ -19,8 +19,8 @@ const AllPosts = ({posts}: {posts: BlogPost[]}) => {
             </div>
             { postsToShow <= 3 && (
                 <>
-                    <span className='absolute w-full xl:h-full md:h-[50%] h-[33%] z-20  bg-gradient-to-b from-[#01031200] to-[#020517] to-80%'></span>
-                    <button onClick={addPosts} className="mb-16 absolute z-30 transition-all duration-500 whitespace-nowrap bg-accent hover:shadow-lg hover:shadow-blue-500/20 rounded-full px-6 text-sm h-[3.1rem] font-medium text-foreground-heading flex items-center justify-center">
+                    <span className='absolute w-full xl:h-full md:h-[50%] h-[33%] z-20  bg-gradient-to-b from-[#F7F8FA]/20 to-[#F7F8FA]/80'></span>
+                    <button onClick={addPosts} className="mb-16 absolute z-30 transition-all duration-500 whitespace-nowrap bg-accent hover:shadow-lg hover:shadow-blue-500/20 rounded-full px-6 text-sm h-[3.1rem] font-medium text-white flex items-center justify-center">
                         Load more ↓
                     </button>
                 </>

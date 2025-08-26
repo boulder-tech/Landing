@@ -8,7 +8,7 @@ interface Props {
 const Heading = ({title, subtitle}: Props) => {
   return (
     <div className="px-8 grid gap-4 items-center justify-center text-center">
-        <h2 className="font-atyp-display text-[32px] -tracking-[0.72px] text-transparent bg-clip-text bg-gradient-to-t from-[#FAFBFF] to-[#B3B9CB]">
+        <h2 className="font-atyp-display text-[32px] -tracking-[0.72px] text-bl">
             {title}
         </h2>
         {subtitle &&
