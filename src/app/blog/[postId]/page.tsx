@@ -46,7 +46,7 @@ const Post = async ({ params }: { params: { postId: string } }) => {
     return (
         <div className="w-screen flex items-center justify-center relative">
             <span className='w-full h-full bg-gradient-to-b from-[#245BFF] to-transparent opacity-20 blur-[400px] absolute left-0 top-0' aria-hidden={true}></span>
-            <div className="flex flex-col gap-0 w-full md:px-0 px-6 prose prose-headings:font-medium prose-invert prose-strong:font-semibold mt-40 z-10">
+            <div className="flex flex-col gap-0 w-full md:px-0 px-6 prose prose-headings:font-medium prose-strong:font-semibold mt-40 z-10">
                 <div className="flex flex-col gap-2">
                     <h1 className="text-4xl font-medium  m-0">{title}</h1>
                     <p className="m-0">

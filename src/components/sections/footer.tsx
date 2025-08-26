@@ -1,99 +1,74 @@
+import React from 'react';
+import logonegro from '@/../public/assets/logonegro.png';
+import x_logo from '@/../public/icons/x-social-media-round-icon.svg';
+import medium_logo from '@/../public/icons/medium-round-icon.svg';
+import linked_logo from '@/../public/icons/linkedin-round-icon.svg';
+import telegram_logo from '@/../public/icons/telegram-icon.svg';
 import Image from 'next/image';
-import ImagetypeClaim from '../../../public/assets/imagotype-claim.svg';
 import Link from 'next/link';
-import X from '../../../public/icons/x-social-media-round-icon.svg';
-import Medium from '../../../public/icons/medium-round-icon.svg';
-import Linkedin from '../../../public/icons/linkedin-round-icon.svg';
-import Telegram from '../../../public/icons/telegram-icon.svg';
 
-import './styles/footer.css';
+const SocialBtn = ({href, src}: {href: string, src: string}) => {
+    return (
+        <Link target='_blank' href={href}>
+            <Image width={25} src={src} alt='Social Media Button'></Image>
+        </Link>
+    )
+}
+
+const Label = ({children}: {children: React.ReactNode}) => {
+    return (
+        <h3 className='font-atyp-text text-base font-semibold text-boulder-text-muted'>{children}</h3>
+    )
+}
 
 const Footer = () => {
     return (
-        <footer className="w-full flex flex-col border-t border-gray-200 bg-background 2xl:px-[300px] lg:px-[150px] md:px-[75px] px-[20px] py-16 pb-0 items-center justify-center">
-            <div className="w-full">
-                <div className="flex flex-col gap-6">
-                    <Image
-                        src={ImagetypeClaim}
-                        alt="Boulder Tech, the gateway token"
-                        width={312}
-                        height={312}
-                        className='sm:w-80 w-64'
-                    />
-                    <p className="text-foreground-dark font-medium">
-                        Join the conversation
-                    </p>
-                    <nav className="pages__StyledSocialRow-sc-1hmqm-8 kTUbOm">
-                        <a
-                            href="https://twitter.com/BoulderTechFi"
-                            rel="noreferrer noopenner"
-                            target="_blank"
-                            className="pages__OutboundLink-sc-1hmqm-24 irHuFq"
-                        >
-                            <Image
-                                src={X}
-                                width={30}
-                                height={30}
-                                className="Icons__TwitterIcon-sc-dy67gv-2 ipWMgx"
-                                alt="icon"
-                            />
-                        </a>
-                        <a
-                            href="https://medium.com/@BoulderTech"
-                            rel="noreferrer noopenner"
-                            target="_blank"
-                            className="pages__OutboundLink-sc-1hmqm-24 irHuFq"
-                        >
-                            <Image
-                                src={Medium}
-                                width={30}
-                                height={30}
-                                className="Icons__TwitterIcon-sc-dy67gv-2 ipWMgx"
-                                alt="icon"
-                            />
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/company/bouldertechtoken "
-                            rel="noreferrer noopenner"
-                            target="_blank"
-                            className="pages__OutboundLink-sc-1hmqm-24 irHuFq"
-                        >
-                            <Image
-                                src={Linkedin}
-                                width={30}
-                                height={30}
-                                className="Icons__TwitterIcon-sc-dy67gv-2 ipWMgx"
-                                alt="icon"
-                            />
-                        </a>
-                        <a
-                            href="https://t.me/+I05vwrkKMe1jNzMx"
-                            rel="noreferrer noopenner"
-                            target="_blank"
-                            className="pages__OutboundLink-sc-1hmqm-24 irHuFq"
-                        >
-                            <Image
-                                src={Telegram}
-                                width={30}
-                                height={30}
-                                className="Icons__TwitterIcon-sc-dy67gv-2 ipWMgx"
-                                alt="icon"
-                            />
-                        </a>
-                    </nav>
+        <div className='w-full main-padding'>
+            <footer className='flex flex-col gap-2 bottom-0 z-10 bg-background-secondary border border-[#E5E7EB] w-full h-fit p-6 text-foreground-tertiary font-atyp-text divide-y-2 divide-[#E5E7EB] overflow-clip mb-8 mt-8 rounded-3xl'>
+                <div className='flex justify-between items-center gap-6 sm:gap-0'>
+                    <Link target='_blank' href={'https://bouldertech.fi'} className='invert dark:invert-0 select-none flex items-center justify-center'>
+                        <Image width={180} src={logonegro} alt='BoulderTech logo'></Image>
+                    </Link>
                 </div>
-                <nav></nav>
-            </div>
-            <div className="w-full border-t flex items-center justify-center p-4 mt-16 font-medium gap-8 border-gray-200">
-                <Link
-                    href="https://docs.bouldertech.fi/boulder-tech-docs/terms-and-conditions"
-                    target='_blank'
-                    className="text-foreground-dark hover:text-foreground-leading transition-all duration-200"
-                >
-                    Terms & Conditions
-                </Link>
-            </div>
-        </footer>
-    );
-};
-export default Footer;
+                <div className='flex sm:flex-row flex-col-reverse justify-between items-start gap-8 sm:gap-20 pt-6 relative'>
+                    <div className='flex flex-col justify-between gap-3 w-full sm:w-[55%]'>
+                        <Label>Disclaimer</Label>
+                        <div className='text-sm text-boulder-text-muted grid gap-1'>
+                            <p>
+                                Investments in private companies, early-stage ventures, investment vehicles such as private funds, and tokenized offerings (ITOs) carry inherent risks and are typically illiquid. These investment opportunities are suitable only for qualified and sophisticated investors who understand and are able to bear the risk of potentially losing the entire value of their invested capital. Access to BoulderTech’s Services is limited to such qualified investors.
+                            </p>
+                            <p>
+                                The information contained in this communication has not been approved by an authorized person within the meaning of the Financial Services and Markets Act 2000. Relying on this communication to engage in any investment activity may expose an individual to significant risk of loss.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='flex sm:gap-x-20'>
+                        <div className='flex flex-col items-start justify-start gap-3 h-full w-full sm:w-fit'>
+                            <Label>External links</Label>
+                            <div className='flex flex-col justify-between text-boulder-text-muted text-sm gap-2'>
+                                <Link className='no-underline underline-offset-2 hover:underline' target='_blank' href={'https://bouldertech.fi/about'}>About us</Link>
+                                <Link className='no-underline underline-offset-2 hover:underline' target='_blank' href={'https://bouldertech.fi/blog'}>Blog</Link>
+                                <Link className='no-underline underline-offset-2 hover:underline' target='_blank' href={'https://docs.bouldertech.fi/boulder-tech-docs'}>Documentation</Link>
+                                <Link className='no-underline underline-offset-2 hover:underline' target='_blank' href={'https://docs.bouldertech.fi/boulder-tech-docs/legal/terms-and-conditions'}>Terms of service</Link>
+                            </div>
+                        </div>
+                        <div className='flex flex-col items-start justify-start gap-3 h-full w-full sm:w-fit'>
+                            <Label>Social Networks</Label>
+                            <div className='flex flex-col gap-4'>
+                                <div className='flex gap-4 justify-start items-center'>
+                                    <SocialBtn href='https://twitter.com/BoulderTechFi' src={x_logo}></SocialBtn>
+                                    <SocialBtn href='https://medium.com/@BoulderTech' src={medium_logo}></SocialBtn>
+                                    <SocialBtn href='https://www.linkedin.com/company/bouldertechtoken' src={linked_logo}></SocialBtn>
+                                    <SocialBtn href='https://t.me/+I05vwrkKMe1jNzMx' src={telegram_logo}></SocialBtn>
+                                </div>
+                                <p className='text-boulder-text-muted text-sm'>Support: <span>hello@bouldertech.fi</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    )
+  }
+
+export default Footer
