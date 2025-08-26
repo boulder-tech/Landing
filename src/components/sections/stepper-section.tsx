@@ -11,7 +11,7 @@ const StepperSection = () => {
             <div className="w-full flex flex-col items-center justify-center px-4 gap-16">
                 <div className="flex flex-col xl:gap-6 gap-4 justify-center items-center w-full text-center z-10">
                     <h1 className='font-atyp-display text-3xl 2xl:text-5xl font-light leading-tight text-black md:w-[800px]'>Cut the paperwork and admin hassle — just invest.</h1>
-                    <h3 className="text-[#46505D] text-xl font-medium z-10 w-[440px]">It's really that simple</h3>
+                    <h3 className="text-[#46505D] text-xl font-medium z-10 w-[440px]">{"It's really that simple"}</h3>
                 </div>
                 <div className='flex flex-col items-center justify-center gap-8 relative'>
                     <div className="flex flex-wrap gap-6 items-center justify-center sm:columns-2">
