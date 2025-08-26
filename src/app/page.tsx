@@ -21,12 +21,6 @@ export default function Home() {
       <StepperSection/>
       <OurApproachSection/> 
       <InvesorsSection/>
-      {/* <GrantSection /> */}
-      {/* <PartnersSection/> */}
-      {/* <div className="relative">
-        <RocketSection />
-      </div> */}
-      {/* <FinalCtaSection/> */}
       <ToastContainer 
         position="bottom-right" 
         toastStyle={{ backgroundColor: "#010312", color: 'white' }}
