@@ -52,6 +52,17 @@ const MeetTheTeam = () => {
           fact3='Former Manager'
           fact3col='Boston Consulting Group'
         />
+        <PersonCard
+          name="Pablo Cordon"
+          role="CCO"
+          imageRoute="/assets/team/cordon.png"
+          fact1="MBA"
+          fact1col="Universidad del CEMA"
+          fact2="Experience"
+          fact2col="25y Corporate Experience"
+          fact3='Participated in 2 IPOs: Arcos Dorados & Atento'
+          fact3col='Background in Finance & HR'
+        />
       </div>
     </div>
   );

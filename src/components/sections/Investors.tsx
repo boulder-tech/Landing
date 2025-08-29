@@ -10,13 +10,13 @@ import RIPIOblack from "../../../public/assets/investors/logo-ripioblack.png"
 
 const InvesorsSection = () => {
     return(
-        <section className="flex flex-col justify-center w-29 sm:px-16 px-4 gap-14 pb-20 xl:pb-28 2xl:pb-32 pt-32 relative">
+        <section className="flex flex-col justify-center w-29 main-padding gap-14 pb-20 xl:pb-28 2xl:pb-32 pt-32 relative">
             <div className="flex flex-col xl:justify-left justify-center gap-12">
                 <div className="flex flex-col gap-4 md:justify-center text-center items-center relative z-20">
                     <h2 className="font-atyp-display text-3xl sm:text-5xl font-black leading-tight italic">On The Shoulders Of Giants</h2>
                     <p className="text-[#46505D] text-lg sm:text-xl font-medium sm:w-[440px] items-center justify-center">Backed by top-tier firms and seasoned investors shaping the future of crypto and finance</p>
                     </div>
-                    <div className="flex flex-wrap justify-center gap-6">
+                    <div className="flex flex-wrap lg:flex-nowrap justify-center gap-24 w-full">
                     <InvestorCard
                         //ver como hacer que cambie onhover la foto. de negro a blanco.
                         logo={IRSAblack}

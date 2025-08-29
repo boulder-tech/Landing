@@ -22,7 +22,7 @@ const StocksSection = () => {
               <p className='md:flex hidden text-foreground-leading leading-normal text-base 2xl:text-lg sm:max-w-[45rem]'>{"Fully compliant"}</p>
         </div>
         </div>
-        <div className='flex flex-col sm:grid sm:grid-cols-2 gap-4 items-center justify-center z-10 md:flex-col md:grid-cols-3 w-full'>
+        <div className='flex flex-col sm:grid sm:grid-cols-2 gap-4 items-center place-items-center justify-center z-10 md:flex-col md:grid-cols-3 w-full'>
             <TokenCard name='Top corporate VC' icon={Trophy} url=''></TokenCard>
             <TokenCard name='Fast Growth Consumer Brand' icon={Chart} url=''></TokenCard>
             <TokenCard name='BCK Capital' icon={BCKCapital} url=''></TokenCard>
