@@ -21,7 +21,7 @@ const TokenCard = ({name, description, icon, url, isComingSoon}: Props) => {
                 </div>  
             </div>
 
-            <div className={`absolute -bottom-5 left-44 sm:group-hover:bottom-[6rem] justify-center group-hover:bottom-32 group-hover:left-44 transition-all duration-300 ease-in-out ${!isComingSoon ? 'visible' : 'invisible'}`}>
+            <div className={`absolute -bottom-1/2 -translate-x-1/2 group-hover:bottom-1/2 justify-center group-hover:left-1/2 transition-all duration-300 ease-in-out ${!isComingSoon ? 'visible' : 'invisible'}`}>
                 <p className='font-medium text-black'>Explore deal ↗</p>
             </div>
             <div className={`absolute top-[-16px] -right-4 bg-[#E8EEFF] border-2 border-[#B3C4FF] whitespace-nowrap rotate-12 rounded-full p-1 ${!isComingSoon ? 'invisible' : 'visible'}`}>
