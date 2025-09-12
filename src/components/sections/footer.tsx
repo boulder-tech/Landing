@@ -1,5 +1,5 @@
 import React from 'react';
-import logonegro from '@/../public/assets/Logonegro.png';
+import logonegro from '@/../public/assets/logonegro.png';
 import x_logo from '@/../public/icons/x-social-media-round-icon.svg';
 import medium_logo from '@/../public/icons/medium-round-icon.svg';
 import linked_logo from '@/../public/icons/linkedin-round-icon.svg';
