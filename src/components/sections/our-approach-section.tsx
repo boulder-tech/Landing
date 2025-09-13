@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import ApproachCard from "../cards/approach-card";
 import Rocket from "../cards/rocket";
-import LaserFocus from "../../../public/assets/laser-focus.png"
 import LaserRed from "../../../public/assets/laser-focus-red.png"
 
 const ourApproach = () => {
