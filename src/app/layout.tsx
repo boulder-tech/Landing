@@ -60,7 +60,8 @@ export default function RootLayout({
           atypText.variable,
           "font-atyp-text",
           'bg-background',
-          'text-foreground-heading'
+          'text-foreground-heading',
+          'overflow-x-hidden'
         )}
       >
         <Header />
