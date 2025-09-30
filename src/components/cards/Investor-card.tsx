@@ -43,10 +43,10 @@ const InvestorCard = ({logo, name, color, url}:Props) => {
             
             <h3 className="text-center font-atyp-display text-3xl font-light leading-tight absolute top-[5.5rem] group-hover:top-[-80px] transition-all duration-300 ease-in-out">Individual<br />Investors</h3>
 
-            <div className="grid grid-cols-2 gap-y-2 left-4 absolute bottom-[-180px] group-hover:bottom-[40px] transition-all duration-300 ease-in-out">
+            <div className="grid grid-cols-2 gap-y-2 left-50% absolute bottom-[-180px] group-hover:bottom-[58px] transition-all duration-300 ease-in-out">
 
                 {individualinvestors.map((investor, i)=>(
-                    <p key={i} className="text-white">{investor}</p>
+                    <p key={i} className="text-white text-center">{investor}</p>
                 ))}
 
             </div>
