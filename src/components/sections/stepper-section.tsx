@@ -14,7 +14,7 @@ const StepperSection = () => {
                     <h3 className="text-[#46505D] text-xl font-medium z-10 w-[440px]">{"It's really that simple"}</h3>
                 </div>
                 <div className='flex flex-col items-center justify-center gap-8 w-full relative'>
-                    <div className="flex flex-wrap lg:flex-nowrap w-full gap-8 justify-center">
+                    <div className="flex flex-wrap lg:flex-nowrap w-full gap-4 justify-center">
                         <StepCard number="1" title="Onboard" description="Verify your identity. Yes, our compliance team asked us to do that so…" />
                         <StepCard number="2" title="Join a Group" description="Apply to our investment clubs, curated by seasoned investors." />
                         <StepCard number="3" title="Select a Deal" description="Discover the vision, the business case, and meet the team behind it." />

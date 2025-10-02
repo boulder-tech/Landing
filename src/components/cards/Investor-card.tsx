@@ -22,7 +22,7 @@ const individualinvestors = [
     "Wenceslao Casares"
 ];
 
-const cardClass = "flex flex-wrap justify-center items-center w-full h-72 bg-[#FFFFFF] border-[#FAFBFF]/12 border-2 rounded-xl duration-150"
+const cardClass = "flex flex-wrap justify-center items-center h-72 bg-[#FFFFFF] border-[#FAFBFF]/12 border-2 rounded-xl duration-150"
 
 const InvestorCard = ({logo, name, color, url}:Props) => {
     

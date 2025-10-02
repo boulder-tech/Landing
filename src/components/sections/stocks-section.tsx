@@ -26,7 +26,7 @@ const StocksSection = () => {
             <TokenCard name='Top corporate VC' icon={Trophy} url=''></TokenCard>
             <TokenCard name='Fast Growth Consumer Brand' icon={Chart} url=''></TokenCard>
             <TokenCard name='BCK Capital' icon={BCKCapital} url=''></TokenCard>
-            <TokenCard name='Enterteinment Holding' description='Back the growth of media and entertainment ventures' icon={Clapperboard} url='' isComingSoon></TokenCard>
+            <TokenCard name='Entertainment Holding' description='Back the growth of media and entertainment ventures' icon={Clapperboard} url='' isComingSoon></TokenCard>
             <TokenCard name='Fintech Services' description='Invest in innovative financial technology companies' icon={CoinsHand} url='' isComingSoon></TokenCard>
             <TokenCard name='Real Estate Developer' description='Tokenized real estate projects offering stable, long-term returns' icon={Home03} url='' isComingSoon></TokenCard>
         </div>

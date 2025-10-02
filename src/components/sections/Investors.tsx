@@ -16,7 +16,7 @@ const InvesorsSection = () => {
                     <h2 className="font-atyp-display text-3xl sm:text-5xl font-black leading-tight italic">On The Shoulders Of Giants</h2>
                     <p className="text-[#46505D] text-lg sm:text-xl font-medium sm:w-[440px] items-center justify-center">Backed by top-tier firms and seasoned investors shaping the future of crypto and finance</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-24 w-full justify-center">
+                    <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-4 w-full justify-center">
                     <InvestorCard
                         //ver como hacer que cambie onhover la foto. de negro a blanco.
                         logo={IRSAblack}
