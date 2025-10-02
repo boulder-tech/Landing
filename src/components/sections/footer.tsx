@@ -56,7 +56,7 @@ const Footer = () => {
                             <Label>Social Networks</Label>
                             <div className='flex flex-col gap-4'>
                                 <div className='flex gap-4 justify-start items-center'>
-                                    <SocialBtn href='https://twitter.com/BoulderTechFi' src={x_logo}></SocialBtn>
+                                    <SocialBtn href='https://x.com/_BoulderTech' src={x_logo}></SocialBtn>
                                     <SocialBtn href='https://medium.com/@BoulderTech' src={medium_logo}></SocialBtn>
                                     <SocialBtn href='https://www.linkedin.com/company/bouldertechtoken' src={linked_logo}></SocialBtn>
                                     <SocialBtn href='https://t.me/+I05vwrkKMe1jNzMx' src={telegram_logo}></SocialBtn>
